@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://mc.yandex.ru https://mc.yandex.com https://yastatic.net; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: blob: https:; media-src 'self' blob:; connect-src 'self' https://mc.yandex.ru https://mc.yandex.com https://mc.yandex.md wss://mc.yandex.ru wss://mc.yandex.com wss://mc.yandex.md; frame-src https://mc.yandex.ru https://mc.yandex.com https://yandexwebvisor.com; child-src blob:; worker-src blob:; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests;" />
   <meta name="description" content="Продажа оптики в Сочи. Медицинские очки, солнцезащитная оптика, контактные линзы и аксессуары. Изготовление за 1 день на станках Essilor (Франция)." />
-  <meta name="theme-color" content="#FAF9F6" />
+  <meta name="theme-color" content="#FFFFFF" />
   <meta name="yandex-verification" content="e36582437b7d08f8" />
   <meta name="google-site-verification" content="AXEXJ3C3w90MUyL9nkMXekuB9zqPJvkbAnua6-PL3ko" />
   <link rel="canonical" href="https://www.xn--80agnisgv3h.xn--p1ai/" />
@@ -13,453 +13,501 @@
   <title>Продажа оптики в Сочи | Оптика Юг</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400;1,500;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="preload" as="image" href="./images/catalog_women.jpg" />
-  <link rel="stylesheet" href="./css/tailwind.css?v=4" />
-  <link rel="stylesheet" href="./css/site.css?v=4" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&family=Unbounded:wght@700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/tailwind.css?v=5" />
+  <link rel="stylesheet" href="./css/site.css?v=5" />
   <script src="./js/lucide.min.js"></script>
 </head>
-<body class="bg-ivory text-ink">
+<body class="bg-white text-black">
 
 <!-- ═════════════ HEADER ═════════════ -->
-<header id="site-header" class="fixed top-3 sm:top-4 inset-x-3 sm:inset-x-5 z-50 max-w-[84rem] mx-auto">
-  <div id="header-inner" class="glass rounded-full pl-2 pr-2 py-2 flex items-center justify-between gap-3">
-    <a href="#top" class="flex items-center gap-3 min-w-0 group pl-0.5">
-      <img src="./images/logo_optika_yug.png" alt="Оптика Юг" class="h-10 w-10 sm:h-11 sm:w-11 rounded-full bg-white ring-1 ring-black/5 p-0.5 object-contain flex-shrink-0 transition-transform duration-700 ease-lux group-hover:rotate-[-6deg]" />
-      <div class="min-w-0 leading-none">
-        <div class="text-[15px] sm:text-[16px] font-semibold tracking-[-0.02em] text-ink">Оптика <span class="text-bronze">Юг</span></div>
-        <div data-bind="address" class="mt-1 text-[11px] sm:text-[11.5px] text-ink-500 truncate">г. Сочи, ул. Курортный пр-т, д. 50</div>
+<header id="site-header" class="fixed top-0 inset-x-0 z-50 bg-white">
+  <div id="header-inner" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between gap-4">
+    <a href="#top" class="flex items-center gap-3 min-w-0 group">
+      <div class="w-10 h-10 sm:w-11 sm:h-11 border border-black bg-white flex items-center justify-center flex-shrink-0 font-chart font-black text-base sm:text-lg tracking-wider group-hover:border-med group-hover:text-med transition-colors">
+        ШБ
+      </div>
+      <div class="min-w-0 leading-tight">
+        <div class="text-sm sm:text-base font-extrabold uppercase tracking-wider text-black">Оптика <span class="text-signal">Юг</span></div>
+        <div data-bind="address" class="font-mono text-[10px] sm:text-[11px] text-med truncate">г. Сочи, ул. Курортный пр-т, д. 50</div>
       </div>
     </a>
-    <nav aria-label="Основное меню" class="hidden lg:flex items-center gap-9 text-[14px] font-medium text-ink/70">
-      <a href="#catalog" class="nav-link hover:text-ink transition-colors duration-500">Каталог</a>
-      <a href="#services" class="nav-link hover:text-ink transition-colors duration-500">Услуги</a>
-      <a href="#vision" class="nav-link hover:text-ink transition-colors duration-500">О зрении</a>
-      <a href="#contacts" class="nav-link hover:text-ink transition-colors duration-500">Контакты</a>
+
+    <nav aria-label="Основное меню" class="hidden lg:flex items-center gap-8 text-xs font-bold uppercase tracking-widest text-black">
+      <a href="#catalog" class="nav-link"><span class="font-mono text-med mr-1">01</span>Каталог</a>
+      <a href="#services" class="nav-link"><span class="font-mono text-med mr-1">02</span>Услуги</a>
+      <a href="#vision" class="nav-link"><span class="font-mono text-med mr-1">03</span>О зрении</a>
+      <a href="#contacts" class="nav-link"><span class="font-mono text-med mr-1">04</span>Контакты</a>
     </nav>
-    <div class="hidden lg:flex items-center gap-2">
-      <a href="tel:+79884036442" data-bind-tel="phoneMain" class="flex items-center gap-2 rounded-full px-4 py-2.5 text-[14px] font-medium text-ink hover:bg-ink/[0.04] transition-colors duration-500">
-        <i data-lucide="phone" class="w-4 h-4 text-bronze"></i>
-        <span data-bind="phoneMain" class="tabular-nums">+7 (988) 403-64-42</span>
+
+    <div class="hidden lg:flex items-center gap-4">
+      <a href="tel:+79884036442" data-bind-tel="phoneMain" class="font-mono text-sm font-semibold text-black hover:text-med transition-colors">
+        <span data-bind="phoneMain">+7 (988) 403-64-42</span>
       </a>
-      <button data-action="open-booking" class="btn-lux group inline-flex items-center gap-3 bg-ink hover:bg-ink-800 text-ivory text-[14px] font-medium pl-5 pr-1.5 py-1.5 rounded-full shadow-lux">
-        Записаться
-        <span class="arrow-swap w-8 h-8 rounded-full bg-ivory/10 ring-1 ring-inset ring-ivory/15">
-          <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i><i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
-        </span>
+      <button data-action="open-booking" class="btn-clinical text-xs uppercase tracking-widest px-5 py-3">
+        <span>Записаться</span>
+        <i data-lucide="arrow-up-right" class="btn-arrow w-4 h-4"></i>
       </button>
     </div>
-    <button id="burger-btn" class="lg:hidden flex flex-col items-center justify-center gap-[5px] w-11 h-11 rounded-full bg-ink/[0.04] hover:bg-ink/[0.07] transition-colors duration-500" aria-label="Меню" aria-expanded="false">
+
+    <button id="burger-btn" class="lg:hidden flex flex-col items-center justify-center gap-[4px] w-10 h-10 border border-black bg-white" aria-label="Меню" aria-expanded="false">
       <span class="burger-line"></span>
       <span class="burger-line"></span>
       <span class="burger-line"></span>
     </button>
   </div>
-  <div id="mobile-menu" class="hidden flex-col glass mt-2 rounded-[1.75rem] p-3 gap-3">
-    <nav aria-label="Мобильное меню" class="flex flex-col">
-      <a href="#catalog" class="mobile-nav-link group flex items-center justify-between text-[22px] font-medium tracking-[-0.02em] text-ink px-4 py-3.5 rounded-2xl hover:bg-white/70 transition-colors duration-500">Каталог <span class="text-[11px] tracking-luxe text-ink-400">01</span></a>
-      <a href="#services" class="mobile-nav-link group flex items-center justify-between text-[22px] font-medium tracking-[-0.02em] text-ink px-4 py-3.5 rounded-2xl hover:bg-white/70 transition-colors duration-500">Услуги <span class="text-[11px] tracking-luxe text-ink-400">02</span></a>
-      <a href="#vision" class="mobile-nav-link group flex items-center justify-between text-[22px] font-medium tracking-[-0.02em] text-ink px-4 py-3.5 rounded-2xl hover:bg-white/70 transition-colors duration-500">О зрении <span class="text-[11px] tracking-luxe text-ink-400">03</span></a>
-      <a href="#contacts" class="mobile-nav-link group flex items-center justify-between text-[22px] font-medium tracking-[-0.02em] text-ink px-4 py-3.5 rounded-2xl hover:bg-white/70 transition-colors duration-500">Контакты <span class="text-[11px] tracking-luxe text-ink-400">04</span></a>
+
+  <div id="mobile-menu" class="hidden flex-col px-4 pt-4 pb-6 gap-4 max-w-7xl mx-auto">
+    <nav aria-label="Мобильное меню" class="flex flex-col divide-y divide-black border-t border-b border-black">
+      <a href="#catalog" class="mobile-nav-link flex items-center justify-between py-3.5 text-base font-bold uppercase tracking-wider text-black"><span>Каталог</span><span class="font-mono text-xs text-med">D=50.0 · 01</span></a>
+      <a href="#services" class="mobile-nav-link flex items-center justify-between py-3.5 text-base font-bold uppercase tracking-wider text-black"><span>Услуги</span><span class="font-mono text-xs text-med">D=25.0 · 02</span></a>
+      <a href="#vision" class="mobile-nav-link flex items-center justify-between py-3.5 text-base font-bold uppercase tracking-wider text-black"><span>О зрении</span><span class="font-mono text-xs text-med">D=12.5 · 03</span></a>
+      <a href="#contacts" class="mobile-nav-link flex items-center justify-between py-3.5 text-base font-bold uppercase tracking-wider text-black"><span>Контакты</span><span class="font-mono text-xs text-signal">V=1.0 · 04</span></a>
     </nav>
-    <div class="hairline-x mx-4"></div>
-    <div class="flex flex-col gap-2">
-      <a href="tel:+79884036442" data-bind-tel="phoneMain" class="flex items-center gap-3 px-4 py-3.5 rounded-2xl bg-white/70 ring-1 ring-black/[0.04] text-ink text-[15px] font-medium">
-        <i data-lucide="phone" class="w-4 h-4 text-bronze"></i>
-        <span data-bind="phoneMain" class="tabular-nums">+7 (988) 403-64-42</span> <span class="text-[12px] text-ink-400 ml-auto">Оптика</span>
+    <div class="grid grid-cols-1 gap-2">
+      <a href="tel:+79884036442" data-bind-tel="phoneMain" class="flex items-center justify-between px-4 py-3 border border-black text-black font-mono text-sm font-semibold">
+        <span data-bind="phoneMain">+7 (988) 403-64-42</span>
+        <span class="text-xs text-med uppercase">Оптика</span>
       </a>
-      <a href="tel:+79951239686" data-bind-tel="phoneMaster" class="flex items-center gap-3 px-4 py-3.5 rounded-2xl bg-white/70 ring-1 ring-black/[0.04] text-ink text-[15px] font-medium">
-        <i data-lucide="phone" class="w-4 h-4 text-bronze"></i>
-        <span data-bind="phoneMaster" class="tabular-nums">+7 (995) 123-96-86</span> <span class="text-[12px] text-ink-400 ml-auto">Мастер</span>
+      <a href="tel:+79951239686" data-bind-tel="phoneMaster" class="flex items-center justify-between px-4 py-3 border border-black text-black font-mono text-sm font-semibold">
+        <span data-bind="phoneMaster">+7 (995) 123-96-86</span>
+        <span class="text-xs text-med uppercase">Мастер</span>
       </a>
-      <button data-action="open-booking" class="mobile-nav-link btn-lux w-full bg-ink text-ivory text-[15px] font-medium px-5 py-4 rounded-2xl">
-        Записаться в салон
+      <button data-action="open-booking" class="mobile-nav-link btn-clinical w-full py-3.5 text-xs uppercase tracking-widest">
+        <span>Записаться в салон</span>
+        <i data-lucide="arrow-up-right" class="btn-arrow w-4 h-4"></i>
       </button>
     </div>
   </div>
 </header>
 
 <main>
-<!-- ═════════════ HERO ═════════════ -->
-<section id="top" class="relative pt-28 sm:pt-36 lg:pt-40 pb-16 sm:pb-20 lg:pb-24 overflow-hidden">
-  <div class="blob w-[620px] h-[620px] bg-bronze-100 opacity-70 -top-52 -right-48"></div>
-  <div class="blob w-[460px] h-[460px] bg-ivory-200 opacity-90 top-1/2 -left-56"></div>
-  <div class="grain"></div>
-
-  <div class="relative z-10 max-w-[84rem] mx-auto px-5 sm:px-8 lg:px-10 grid lg:grid-cols-12 gap-14 lg:gap-10 items-center">
-    <div class="lg:col-span-7 lg:pr-6">
-      <div class="reveal inline-flex items-center gap-2.5 glass rounded-full pl-2 pr-4 py-1.5">
-        <span class="hero-dot" aria-hidden="true"></span>
-        <span class="text-[11px] sm:text-[12px] font-medium tracking-[0.14em] uppercase text-ink/80">Премиальный салон оптики <span class="text-bronze mx-1">•</span> Сочи</span>
+<!-- ═════════════ HERO (ТАБЛИЦА СИВЦЕВА) ═════════════ -->
+<section id="top" class="pt-24 sm:pt-28 lg:pt-32 pb-16 lg:pb-24 px-4 sm:px-6 lg:px-8 border-b border-black">
+  <div class="max-w-7xl mx-auto">
+    <!-- Top calibration bar -->
+    <div class="reveal flex flex-wrap items-center justify-between gap-2 pb-4 mb-8 sm:mb-12 border-b border-med font-mono text-[11px] sm:text-xs uppercase tracking-wider">
+      <div class="flex items-center gap-2 text-black">
+        <span class="inline-block w-2 h-2 bg-signal"></span>
+        <span>ТАБЛИЦА ОПТИЧЕСКОГО КОНТРОЛЯ · СОЧИ</span>
       </div>
-
-      <h1 class="hero-title reveal reveal-fade mt-8 sm:mt-10 text-[clamp(3.1rem,8.4vw,6.2rem)] leading-[0.92] tracking-tightest font-medium text-ink">
-        <span class="reveal-line"><span>Искусство</span></span>
-        <span class="reveal-line pb-[0.08em]"><span>ясного <em>взгляда</em></span></span>
-      </h1>
-
-      <p class="reveal mt-7 sm:mt-9 max-w-[33rem] text-[16.5px] sm:text-[18px] leading-[1.65] text-ink-500 text-pretty">
-        Медицинские и солнцезащитные очки, контактные линзы и&nbsp;собственная мастерская. Подбираем оправу под черты лица и&nbsp;изготавливаем очки за&nbsp;один день.
-      </p>
-
-      <div class="reveal mt-9 sm:mt-11 flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-2">
-        <button data-action="open-booking" class="btn-lux group inline-flex items-center justify-between gap-5 rounded-full bg-ink hover:bg-ink-800 text-ivory pl-7 pr-2 py-2 text-[15px] font-medium shadow-lux-lg">
-          <span>Записаться на проверку зрения</span>
-          <span class="arrow-swap w-11 h-11 rounded-full bg-bronze text-ivory">
-            <i data-lucide="arrow-up-right" class="w-4 h-4"></i><i data-lucide="arrow-up-right" class="w-4 h-4"></i>
-          </span>
-        </button>
-        <a href="#catalog" class="group inline-flex items-center justify-center gap-2.5 px-6 py-4 text-[15px] font-medium text-ink">
-          <span class="link-underline pb-0.5">Смотреть коллекции</span>
-          <i data-lucide="arrow-down-right" class="w-4 h-4 text-bronze transition-transform duration-700 ease-lux group-hover:translate-x-0.5 group-hover:translate-y-0.5"></i>
-        </a>
-      </div>
-
-      <dl class="reveal mt-14 lg:mt-20 grid grid-cols-1 sm:grid-cols-3 gap-px rounded-[1.5rem] overflow-hidden bg-zinc-200/80 ring-1 ring-zinc-200/80 shadow-lux">
-        <div class="group bg-ivory/95 p-5 lg:p-6 flex sm:flex-col items-center sm:items-start gap-4 sm:gap-5 hover:bg-white transition-colors duration-700">
-          <span class="w-10 h-10 flex-shrink-0 rounded-full border border-zinc-200/80 bg-white flex items-center justify-center text-bronze transition-transform duration-700 ease-lux group-hover:-rotate-12"><i data-lucide="gem" class="w-[18px] h-[18px]"></i></span>
-          <div>
-            <dt class="text-[15px] font-semibold tracking-[-0.01em] text-ink">Станки Essilor</dt>
-            <dd class="mt-1 text-[13px] leading-snug text-ink-500">Франция · точность до 0,01&nbsp;дптр</dd>
-          </div>
-        </div>
-        <div class="group bg-ivory/95 p-5 lg:p-6 flex sm:flex-col items-center sm:items-start gap-4 sm:gap-5 hover:bg-white transition-colors duration-700">
-          <span class="w-10 h-10 flex-shrink-0 rounded-full border border-zinc-200/80 bg-white flex items-center justify-center text-bronze transition-transform duration-700 ease-lux group-hover:-rotate-12"><i data-lucide="timer" class="w-[18px] h-[18px]"></i></span>
-          <div>
-            <dt class="text-[15px] font-semibold tracking-[-0.01em] text-ink">Очки за 1 день</dt>
-            <dd class="mt-1 text-[13px] leading-snug text-ink-500">От рецепта до готовой пары</dd>
-          </div>
-        </div>
-        <div class="group bg-ivory/95 p-5 lg:p-6 flex sm:flex-col items-center sm:items-start gap-4 sm:gap-5 hover:bg-white transition-colors duration-700">
-          <span class="w-10 h-10 flex-shrink-0 rounded-full border border-zinc-200/80 bg-white flex items-center justify-center text-bronze transition-transform duration-700 ease-lux group-hover:-rotate-12"><i data-lucide="scan-eye" class="w-[18px] h-[18px]"></i></span>
-          <div>
-            <dt class="text-[15px] font-semibold tracking-[-0.01em] text-ink">Проверка зрения</dt>
-            <dd class="mt-1 text-[13px] leading-snug text-ink-500">Современное оборудование</dd>
-          </div>
-        </div>
-      </dl>
+      <div class="text-med">ГОСТ · ESSILOR (ФРАНЦИЯ) · ТОЧНОСТЬ 0.01 D</div>
     </div>
 
-    <div class="lg:col-span-5 relative">
-      <div class="relative mx-auto w-[86%] sm:w-[70%] lg:w-full max-w-[30rem] lg:ml-auto">
-        <div class="hero-ring w-[118%] aspect-square -top-[12%] -left-[9%]"></div>
-        <div class="hero-ring w-[96%] aspect-square top-[2%] left-[2%] border-dashed opacity-60"></div>
-
-        <figure class="reveal reveal-scale hero-arch sheen relative overflow-hidden aspect-[4/5] bg-ivory-200 shadow-lux-xl">
-          <img src="./images/catalog_women.jpg" alt="Девушка в изящной оправе — салон «Оптика Юг»" fetchpriority="high" id="hero-img" class="hero-img absolute inset-0 w-full h-full object-cover object-[50%_28%]" />
-          <div class="absolute inset-x-0 bottom-0 h-2/5 bg-gradient-to-t from-black/45 via-black/10 to-transparent"></div>
-          <figcaption class="absolute left-4 right-4 sm:left-5 sm:right-5 bottom-4 sm:bottom-5 flex items-center justify-between gap-3 text-white">
-            <span class="glass-dark rounded-full px-3.5 py-2 text-[11px] sm:text-[12px] font-medium tracking-[0.08em]">Оправы европейских брендов</span>
-          </figcaption>
-        </figure>
-
-        <div class="reveal absolute -left-[12%] sm:-left-[18%] bottom-[16%] w-[40%] sm:w-[42%] float-slow" data-reveal-delay="350">
-          <div class="sheen relative aspect-[4/5] rounded-[1.5rem] overflow-hidden ring-[5px] sm:ring-[6px] ring-ivory shadow-lux-lg bg-ivory-200">
-            <img src="./images/catalog_repair.jpg" alt="Мастер регулирует оправу" loading="lazy" class="absolute inset-0 w-full h-full object-cover" />
-          </div>
-        </div>
-
-        <div class="reveal absolute -right-[4%] sm:-right-[10%] top-[10%] float-slow-2" data-reveal-delay="500">
-          <div class="glass rounded-2xl pl-2.5 pr-4 py-2.5 flex items-center gap-3">
-            <span class="w-9 h-9 rounded-xl bg-ink text-ivory flex items-center justify-center"><i data-lucide="badge-check" class="w-4 h-4"></i></span>
-            <div class="leading-tight">
-              <div class="text-[13px] font-semibold text-ink">Essilor</div>
-              <div class="text-[11px] text-ink-500">Франция</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="reveal hidden sm:flex absolute -right-[6%] bottom-[-5%] float-slow" data-reveal-delay="650">
-          <div class="glass rounded-2xl px-4 py-3 flex items-center gap-3">
-            <i data-lucide="map-pin" class="w-4 h-4 text-bronze"></i>
-            <div class="leading-tight">
-              <div class="text-[12.5px] font-semibold text-ink">Курортный пр-т, 50</div>
-              <div data-bind="hours" class="text-[11px] text-ink-500">с 10:00 до 19:00, без выходных</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="relative z-10 mt-20 sm:mt-24 lg:mt-28 border-y border-zinc-200/80 py-5 sm:py-6 overflow-hidden marquee-mask" aria-hidden="true">
-    <div class="marquee items-center gap-10 sm:gap-14 whitespace-nowrap font-serif italic text-[1.6rem] sm:text-[2.1rem] text-ink/80">
-      <span>Медицинские очки</span><span class="marquee-dot"></span>
-      <span>Солнцезащитная оптика</span><span class="marquee-dot"></span>
-      <span>Контактные линзы</span><span class="marquee-dot"></span>
-      <span>Essilor Varilux</span><span class="marquee-dot"></span>
-      <span>Ремонт оправ</span><span class="marquee-dot"></span>
-      <span>Проверка зрения</span><span class="marquee-dot"></span>
-      <span>Медицинские очки</span><span class="marquee-dot"></span>
-      <span>Солнцезащитная оптика</span><span class="marquee-dot"></span>
-      <span>Контактные линзы</span><span class="marquee-dot"></span>
-      <span>Essilor Varilux</span><span class="marquee-dot"></span>
-      <span>Ремонт оправ</span><span class="marquee-dot"></span>
-      <span>Проверка зрения</span><span class="marquee-dot"></span>
-    </div>
-  </div>
-</section>
-
-<!-- ═════════════ CATALOG (Bento) ═════════════ -->
-<section id="catalog" class="relative py-24 sm:py-28 lg:py-36">
-  <div class="max-w-[84rem] mx-auto px-5 sm:px-8 lg:px-10">
-    <div class="grid lg:grid-cols-12 gap-6 lg:gap-10 items-end mb-12 sm:mb-14 lg:mb-20">
+    <div class="grid lg:grid-cols-12 gap-10 lg:gap-12 items-start">
+      <!-- Left: Typographic eye-chart hierarchy -->
       <div class="lg:col-span-7">
-        <div class="reveal flex items-center gap-3 text-[11px] sm:text-[12px] font-medium tracking-luxe uppercase text-bronze">
-          <span class="tabular-nums">01</span><span class="w-8 h-px bg-bronze/50"></span><span>Коллекции</span>
+        <div class="reveal font-mono text-xs uppercase tracking-widest text-med mb-3">
+          [ D = 50.0 · СТРОКА №1 · V = 0.1 → 1.0 ]
         </div>
-        <h2 id="catalog-title" class="reveal mt-5 text-[clamp(2.5rem,6vw,4.9rem)] leading-[0.95] tracking-tightest font-medium text-ink text-balance">Каталог и услуги</h2>
+
+        <h1 class="reveal font-chart font-black uppercase text-black tracking-tight leading-[0.95] text-[clamp(2.5rem,7.2vw,5.6rem)]">
+          ОПТИКА ЮГ
+        </h1>
+        <div class="reveal font-chart font-extrabold uppercase text-black tracking-[0.14em] leading-[1.08] text-[clamp(1.35rem,3.6vw,2.75rem)] mt-2 sm:mt-3">
+          ПРОВЕРКА ЗРЕНИЯ
+        </div>
+        <div class="reveal font-chart font-bold uppercase text-black tracking-[0.2em] leading-[1.15] text-[clamp(0.92rem,2vw,1.5rem)] mt-2 sm:mt-3 pb-4 border-b-2 border-signal">
+          ИЗГОТОВЛЕНИЕ ОЧКОВ ЗА 1 ДЕНЬ
+        </div>
+
+        <div class="reveal flex items-center justify-between font-mono text-[11px] sm:text-xs uppercase mt-2 mb-6">
+          <span class="text-signal font-bold">▲ ЛИНИЯ ОСТРОТЫ ЗРЕНИЯ V = 1.0</span>
+          <span class="text-med">ДИСТАНЦИЯ 5 МЕТРОВ</span>
+        </div>
+
+        <p class="reveal text-base sm:text-lg leading-relaxed text-black max-w-2xl">
+          Медицинские и солнцезащитная оптика, контактные линзы и собственная мастерская в Сочи. Подбираем оправу, проверяем зрение и вытачиваем линзы на французских станках <strong>Essilor</strong> с точностью до <strong>0,01 диоптрии</strong>.
+        </p>
+
+        <div class="reveal mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
+          <button data-action="open-booking" class="btn-clinical text-xs sm:text-sm uppercase tracking-widest px-7 py-4">
+            <span>Записаться на проверку</span>
+            <i data-lucide="arrow-up-right" class="btn-arrow w-4 h-4"></i>
+          </button>
+          <a href="#catalog" class="btn-outline text-xs sm:text-sm uppercase tracking-widest px-7 py-4">
+            <span>Таблица каталога</span>
+            <i data-lucide="arrow-down" class="w-4 h-4 text-med"></i>
+          </a>
+        </div>
+
+        <!-- 3 strict clinical cells -->
+        <dl class="reveal mt-10 sm:mt-12 grid grid-cols-3 border border-black divide-x divide-black">
+          <div class="p-3 sm:p-5 bg-white">
+            <dt class="font-mono text-[10px] sm:text-xs text-med uppercase">D = 0.01</dt>
+            <dd class="font-chart font-black text-lg sm:text-2xl text-black mt-1">ESSILOR</dd>
+            <dd class="text-[11px] sm:text-xs text-black mt-0.5">Станки, Франция</dd>
+          </div>
+          <div class="p-3 sm:p-5 bg-white">
+            <dt class="font-mono text-[10px] sm:text-xs text-med uppercase">T = 24 Ч</dt>
+            <dd class="font-chart font-black text-lg sm:text-2xl text-black mt-1">1 ДЕНЬ</dd>
+            <dd class="text-[11px] sm:text-xs text-black mt-0.5">Готовые очки</dd>
+          </div>
+          <div class="p-3 sm:p-5 bg-white">
+            <dt class="font-mono text-[10px] sm:text-xs text-signal uppercase">V = 1.0</dt>
+            <dd class="font-chart font-black text-lg sm:text-2xl text-black mt-1">100%</dd>
+            <dd class="text-[11px] sm:text-xs text-black mt-0.5">Точный подбор</dd>
+          </div>
+        </dl>
       </div>
-      <div class="lg:col-span-5 lg:pb-2">
-        <p id="catalog-subtitle" class="reveal text-[16.5px] sm:text-lg leading-relaxed text-ink-500 max-w-md lg:ml-auto">Оправы, линзы, аксессуары и мастерская с быстрым переходом в коллекции</p>
-        <a href="https://vk.ru/opticasouth" target="_blank" rel="noopener" class="reveal group mt-5 inline-flex lg:flex lg:justify-end items-center gap-2 text-[14px] font-medium text-ink">
-          <span class="link-underline pb-0.5">Все коллекции во ВКонтакте</span>
-          <span class="arrow-swap w-7 h-7 rounded-full border border-zinc-300/80"><i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i><i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i></span>
+
+      <!-- Right: Authentic Sivtsev "Ш Б" Poster -->
+      <div class="lg:col-span-5 w-full">
+        <div class="reveal sivtsev-poster corner-ticks">
+          <div class="flex items-center justify-between px-3.5 py-2.5 border-b border-black font-mono text-[10px] sm:text-[11px] uppercase">
+            <span class="text-med font-semibold">ТАБЛИЦА СИВЦЕВА · ОПТИКА ЮГ</span>
+            <span class="text-black">№ 01</span>
+          </div>
+
+          <div class="sivtsev-row">
+            <span class="sivtsev-meta">D=50,0</span>
+            <span class="sivtsev-letters text-[2.6rem] sm:text-[3.4rem] tracking-[0.35em] pl-[0.35em]">Ш Б</span>
+            <span class="sivtsev-meta sivtsev-meta-r">V=0,1</span>
+          </div>
+          <div class="sivtsev-row">
+            <span class="sivtsev-meta">D=25,0</span>
+            <span class="sivtsev-letters text-[1.85rem] sm:text-[2.35rem] tracking-[0.32em] pl-[0.32em]">М Н К</span>
+            <span class="sivtsev-meta sivtsev-meta-r">V=0,2</span>
+          </div>
+          <div class="sivtsev-row">
+            <span class="sivtsev-meta">D=16,7</span>
+            <span class="sivtsev-letters text-[1.35rem] sm:text-[1.7rem] tracking-[0.28em] pl-[0.28em]">Ы М Б Ш</span>
+            <span class="sivtsev-meta sivtsev-meta-r">V=0,3</span>
+          </div>
+          <div class="sivtsev-row">
+            <span class="sivtsev-meta">D=12,5</span>
+            <span class="sivtsev-letters text-[1.05rem] sm:text-[1.3rem] tracking-[0.25em] pl-[0.25em]">Б Ы Н К М</span>
+            <span class="sivtsev-meta sivtsev-meta-r">V=0,4</span>
+          </div>
+          <div class="sivtsev-row">
+            <span class="sivtsev-meta">D=10,0</span>
+            <span class="sivtsev-letters text-[0.88rem] sm:text-[1.05rem] tracking-[0.24em] pl-[0.24em]">И Н Ш М К</span>
+            <span class="sivtsev-meta sivtsev-meta-r">V=0,5</span>
+          </div>
+          <div class="sivtsev-row is-red-line">
+            <span class="sivtsev-meta">D=5,0</span>
+            <span class="sivtsev-letters text-[0.72rem] sm:text-[0.82rem] tracking-[0.22em] pl-[0.22em]">Н Ш Ы И К Б</span>
+            <span class="sivtsev-meta sivtsev-meta-r !text-signal font-bold">V=1,0</span>
+          </div>
+          <div class="sivtsev-row">
+            <span class="sivtsev-meta">D=2,5</span>
+            <span class="sivtsev-letters text-[0.58rem] sm:text-[0.65rem] tracking-[0.2em] pl-[0.2em]">Ш И Н Б К Ы</span>
+            <span class="sivtsev-meta sivtsev-meta-r">V=2,0</span>
+          </div>
+
+          <div class="flex items-center justify-between px-3.5 py-2.5 bg-white font-mono text-[10px] sm:text-[11px]">
+            <span data-bind="address" class="text-black truncate">г. Сочи, Курортный пр-т, д. 50</span>
+            <span data-bind="hours" class="text-med ml-2 flex-shrink-0">с 10:00 до 19:00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═════════════ CATALOG (ПИРАМИДЫ ШБ ПО ЭСКИЗУ КЛИЕНТА) ═════════════ -->
+<section id="catalog" class="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 border-b border-black bg-white">
+  <div class="max-w-7xl mx-auto">
+    <div class="reveal flex flex-col md:flex-row md:items-end justify-between gap-4 pb-6 mb-10 sm:mb-12 border-b-2 border-black">
+      <div>
+        <div class="font-mono text-xs uppercase tracking-widest text-med mb-2">
+          [ РАЗДЕЛ 01 · ОПТОТИПЫ КАТАЛОГА · D = 50.0 → 5.0 ]
+        </div>
+        <h2 id="catalog-title" class="font-chart font-black uppercase text-black tracking-tight text-2xl sm:text-4xl lg:text-5xl">
+          Каталог и услуги
+        </h2>
+      </div>
+      <div class="flex flex-col sm:items-end gap-2">
+        <p id="catalog-subtitle" class="text-sm sm:text-base text-black">
+          Оправы, линзы, аксессуары и мастерская с быстрым переходом в коллекции
+        </p>
+        <a href="https://vk.ru/opticasouth" target="_blank" rel="noopener" class="group inline-flex items-center gap-2 font-mono text-xs font-bold uppercase tracking-wider text-med hover:text-signal">
+          <span>Все альбомы ВКонтакте</span>
+          <i data-lucide="arrow-up-right" class="arrow-shift w-4 h-4"></i>
         </a>
       </div>
     </div>
 
-    <div id="catalog-grid" class="grid grid-cols-2 md:grid-cols-6 lg:grid-cols-12 auto-rows-[13.5rem] sm:auto-rows-[16rem] lg:auto-rows-[18.5rem] gap-3 sm:gap-4 lg:gap-5" data-reveal-stagger>
-      <a href="https://vk.ru/opticasouth" target="_blank" rel="noopener" class="catalog-tile bento-card sheen reveal group relative isolate overflow-hidden rounded-[1.5rem] sm:rounded-[2rem] bg-ink flex flex-col justify-between p-4 sm:p-6 lg:p-7 col-span-2 row-span-2 md:col-span-3 lg:col-span-5">
-        <img src="./images/catalog_men.jpg" alt="Мужские" class="bento-img absolute inset-0 -z-10 w-full h-full object-cover object-[50%_25%]" />
-        <div class="absolute inset-0 -z-10 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
-        <div class="relative flex items-start justify-between gap-3">
-          <span class="glass-dark rounded-full px-3 py-1.5 text-[10px] sm:text-[11px] font-medium tracking-[0.18em] uppercase text-white/90 tabular-nums">01</span>
-          <span class="cta-arrow arrow-swap w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white/15 backdrop-blur-md border border-white/30 text-white"><i data-lucide="arrow-up-right" class="w-4 h-4"></i><i data-lucide="arrow-up-right" class="w-4 h-4"></i></span>
+    <!-- 6 White Square Pyramid Cards -->
+    <div id="catalog-grid" class="grid grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
+      <!-- 1. Мужские: М / УЖ / СКАЯ / коллекция -->
+      <a href="https://vk.ru/opticasouth" target="_blank" rel="noopener" aria-label="Мужские" class="catalog-tile reveal group">
+        <div class="tile-head">
+          <span>№01 · D=50.0</span>
+          <span class="tile-v">V=0.1</span>
         </div>
-        <div class="bento-meta relative">
-          <span class="bento-cta block text-[10px] sm:text-[11px] uppercase tracking-[0.2em] text-white/80 font-medium mb-2 sm:mb-3">Смотреть в ВК</span>
-          <h3 class="text-[2rem] sm:text-[2.5rem] lg:text-[3rem] font-medium tracking-[-0.035em] text-white leading-[1] break-words">Мужские</h3>
+        <div class="pyramid" aria-hidden="true">
+          <span class="pyr-1">М</span>
+          <span class="pyr-2">УЖ</span>
+          <span class="pyr-3">СКАЯ</span>
+          <span class="pyr-4">коллекция</span>
         </div>
-      </a>
-      <a href="https://vk.ru/opticasouth" target="_blank" rel="noopener" class="catalog-tile bento-card sheen reveal group relative isolate overflow-hidden rounded-[1.5rem] sm:rounded-[2rem] bg-ink flex flex-col justify-between p-4 sm:p-6 lg:p-7 col-span-1 md:col-span-3 md:row-span-2 lg:col-span-4">
-        <img src="./images/catalog_women.jpg" alt="Женские" class="bento-img absolute inset-0 -z-10 w-full h-full object-cover object-[50%_25%]" />
-        <div class="absolute inset-0 -z-10 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
-        <div class="relative flex items-start justify-between gap-3">
-          <span class="glass-dark rounded-full px-3 py-1.5 text-[10px] sm:text-[11px] font-medium tracking-[0.18em] uppercase text-white/90 tabular-nums">02</span>
-          <span class="cta-arrow arrow-swap w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white/15 backdrop-blur-md border border-white/30 text-white"><i data-lucide="arrow-up-right" class="w-4 h-4"></i><i data-lucide="arrow-up-right" class="w-4 h-4"></i></span>
-        </div>
-        <div class="bento-meta relative">
-          <span class="bento-cta block text-[10px] sm:text-[11px] uppercase tracking-[0.2em] text-white/80 font-medium mb-2 sm:mb-3">Смотреть в ВК</span>
-          <h3 class="text-[1.35rem] sm:text-[2.5rem] lg:text-[2.75rem] font-medium tracking-[-0.035em] text-white leading-[1] break-words">Женские</h3>
+        <div class="tile-foot">
+          <span class="truncate pr-2">Смотреть в ВК</span>
+          <span class="cta-arrow"><i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i></span>
         </div>
       </a>
-      <a href="https://vk.ru/opticasouth" target="_blank" rel="noopener" class="catalog-tile bento-card sheen reveal group relative isolate overflow-hidden rounded-[1.5rem] sm:rounded-[2rem] bg-ink flex flex-col justify-between p-4 sm:p-6 lg:p-7 col-span-1 md:col-span-2 lg:col-span-3">
-        <img src="./uploads/image-20261106-05e8fc4c832f69c7.jpg" alt="Детские" class="bento-img absolute inset-0 -z-10 w-full h-full object-cover object-[50%_35%]" />
-        <div class="absolute inset-0 -z-10 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
-        <div class="relative flex items-start justify-between gap-3">
-          <span class="glass-dark rounded-full px-3 py-1.5 text-[10px] sm:text-[11px] font-medium tracking-[0.18em] uppercase text-white/90 tabular-nums">03</span>
-          <span class="cta-arrow arrow-swap w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white/15 backdrop-blur-md border border-white/30 text-white"><i data-lucide="arrow-up-right" class="w-4 h-4"></i><i data-lucide="arrow-up-right" class="w-4 h-4"></i></span>
+
+      <!-- 2. Женские: Ж / ЕН / СКАЯ / коллекция -->
+      <a href="https://vk.ru/opticasouth" target="_blank" rel="noopener" aria-label="Женские" class="catalog-tile reveal group">
+        <div class="tile-head">
+          <span>№02 · D=25.0</span>
+          <span class="tile-v">V=0.2</span>
         </div>
-        <div class="bento-meta relative">
-          <span class="bento-cta block text-[10px] sm:text-[11px] uppercase tracking-[0.2em] text-white/80 font-medium mb-2 sm:mb-3">Смотреть в ВК</span>
-          <h3 class="text-[1.35rem] sm:text-[1.75rem] lg:text-[1.9rem] font-medium tracking-[-0.03em] text-white leading-[1.05] break-words">Детские</h3>
+        <div class="pyramid" aria-hidden="true">
+          <span class="pyr-1">Ж</span>
+          <span class="pyr-2">ЕН</span>
+          <span class="pyr-3">СКАЯ</span>
+          <span class="pyr-4">коллекция</span>
         </div>
-      </a>
-      <a href="https://vk.ru/opticasouth" target="_blank" rel="noopener" class="catalog-tile bento-card sheen reveal group relative isolate overflow-hidden rounded-[1.5rem] sm:rounded-[2rem] bg-ink flex flex-col justify-between p-4 sm:p-6 lg:p-7 col-span-1 md:col-span-2 lg:col-span-3">
-        <img src="./images/catalog_repair.jpg" alt="Ремонт оправ" class="bento-img absolute inset-0 -z-10 w-full h-full object-cover object-[50%_45%]" />
-        <div class="absolute inset-0 -z-10 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
-        <div class="relative flex items-start justify-between gap-3">
-          <span class="glass-dark rounded-full px-3 py-1.5 text-[10px] sm:text-[11px] font-medium tracking-[0.18em] uppercase text-white/90 tabular-nums">04</span>
-          <span class="cta-arrow arrow-swap w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white/15 backdrop-blur-md border border-white/30 text-white"><i data-lucide="arrow-up-right" class="w-4 h-4"></i><i data-lucide="arrow-up-right" class="w-4 h-4"></i></span>
-        </div>
-        <div class="bento-meta relative">
-          <span class="bento-cta block text-[10px] sm:text-[11px] uppercase tracking-[0.2em] text-white/80 font-medium mb-2 sm:mb-3">Смотреть в ВК</span>
-          <h3 class="text-[1.35rem] sm:text-[1.75rem] lg:text-[1.9rem] font-medium tracking-[-0.03em] text-white leading-[1.05] break-words">Ремонт оправ</h3>
+        <div class="tile-foot">
+          <span class="truncate pr-2">Смотреть в ВК</span>
+          <span class="cta-arrow"><i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i></span>
         </div>
       </a>
-      <a href="https://vk.ru/opticasouth" target="_blank" rel="noopener" class="catalog-tile bento-card sheen reveal group relative isolate overflow-hidden rounded-[1.5rem] sm:rounded-[2rem] bg-ink flex flex-col justify-between p-4 sm:p-6 lg:p-7 col-span-1 md:col-span-2 lg:col-span-7">
-        <img src="./images/catalog_lenses.jpg" alt="Контактные линзы" class="bento-img absolute inset-0 -z-10 w-full h-full object-cover object-[50%_42%]" />
-        <div class="absolute inset-0 -z-10 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
-        <div class="relative flex items-start justify-between gap-3">
-          <span class="glass-dark rounded-full px-3 py-1.5 text-[10px] sm:text-[11px] font-medium tracking-[0.18em] uppercase text-white/90 tabular-nums">05</span>
-          <span class="cta-arrow arrow-swap w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white/15 backdrop-blur-md border border-white/30 text-white"><i data-lucide="arrow-up-right" class="w-4 h-4"></i><i data-lucide="arrow-up-right" class="w-4 h-4"></i></span>
+
+      <!-- 3. Детские: Д / ЕТ / СКИЕ / коллекция -->
+      <a href="https://vk.ru/opticasouth" target="_blank" rel="noopener" aria-label="Детские" class="catalog-tile reveal group">
+        <div class="tile-head">
+          <span>№03 · D=16.7</span>
+          <span class="tile-v">V=0.3</span>
         </div>
-        <div class="bento-meta relative">
-          <span class="bento-cta block text-[10px] sm:text-[11px] uppercase tracking-[0.2em] text-white/80 font-medium mb-2 sm:mb-3">Смотреть в ВК</span>
-          <h3 class="text-[1.35rem] sm:text-[1.75rem] lg:text-[2.25rem] font-medium tracking-[-0.03em] text-white leading-[1.05] break-words">Контактные линзы</h3>
+        <div class="pyramid" aria-hidden="true">
+          <span class="pyr-1">Д</span>
+          <span class="pyr-2">ЕТ</span>
+          <span class="pyr-3">СКИЕ</span>
+          <span class="pyr-4">коллекция</span>
+        </div>
+        <div class="tile-foot">
+          <span class="truncate pr-2">Смотреть в ВК</span>
+          <span class="cta-arrow"><i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i></span>
         </div>
       </a>
-      <a href="https://vk.ru/opticasouth" target="_blank" rel="noopener" class="catalog-tile bento-card sheen reveal group relative isolate overflow-hidden rounded-[1.5rem] sm:rounded-[2rem] bg-ink flex flex-col justify-between p-4 sm:p-6 lg:p-7 col-span-2 md:col-span-6 lg:col-span-5">
-        <img src="./images/catalog_accessories.jpg" alt="Аксессуары" class="bento-img absolute inset-0 -z-10 w-full h-full object-cover object-[50%_55%]" />
-        <div class="absolute inset-0 -z-10 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
-        <div class="relative flex items-start justify-between gap-3">
-          <span class="glass-dark rounded-full px-3 py-1.5 text-[10px] sm:text-[11px] font-medium tracking-[0.18em] uppercase text-white/90 tabular-nums">06</span>
-          <span class="cta-arrow arrow-swap w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white/15 backdrop-blur-md border border-white/30 text-white"><i data-lucide="arrow-up-right" class="w-4 h-4"></i><i data-lucide="arrow-up-right" class="w-4 h-4"></i></span>
+
+      <!-- 4. Ремонт оправ: Р / ЕМ / ОНТ / оправ -->
+      <a href="https://vk.ru/opticasouth" target="_blank" rel="noopener" aria-label="Ремонт оправ" class="catalog-tile reveal group">
+        <div class="tile-head">
+          <span>№04 · D=12.5</span>
+          <span class="tile-v">V=0.4</span>
         </div>
-        <div class="bento-meta relative">
-          <span class="bento-cta block text-[10px] sm:text-[11px] uppercase tracking-[0.2em] text-white/80 font-medium mb-2 sm:mb-3">Смотреть в ВК</span>
-          <h3 class="text-[1.6rem] sm:text-[1.9rem] lg:text-[2.25rem] font-medium tracking-[-0.03em] text-white leading-[1.05] break-words">Аксессуары</h3>
+        <div class="pyramid" aria-hidden="true">
+          <span class="pyr-1">Р</span>
+          <span class="pyr-2">ЕМ</span>
+          <span class="pyr-3">ОНТ</span>
+          <span class="pyr-4">оправ</span>
+        </div>
+        <div class="tile-foot">
+          <span class="truncate pr-2">Смотреть в ВК</span>
+          <span class="cta-arrow"><i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i></span>
+        </div>
+      </a>
+
+      <!-- 5. Контактные линзы: Л / ИН / ЗЫ / контактные -->
+      <a href="https://vk.ru/opticasouth" target="_blank" rel="noopener" aria-label="Контактные линзы" class="catalog-tile reveal group">
+        <div class="tile-head">
+          <span>№05 · D=10.0</span>
+          <span class="tile-v">V=0.5</span>
+        </div>
+        <div class="pyramid" aria-hidden="true">
+          <span class="pyr-1">Л</span>
+          <span class="pyr-2">ИН</span>
+          <span class="pyr-3">ЗЫ</span>
+          <span class="pyr-4">контактные</span>
+        </div>
+        <div class="tile-foot">
+          <span class="truncate pr-2">Смотреть в ВК</span>
+          <span class="cta-arrow"><i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i></span>
+        </div>
+      </a>
+
+      <!-- 6. Аксессуары: А / КС / ЕССУАРЫ / оптики -->
+      <a href="https://vk.ru/opticasouth" target="_blank" rel="noopener" aria-label="Аксессуары" class="catalog-tile reveal group">
+        <div class="tile-head">
+          <span>№06 · D=5.0</span>
+          <span class="tile-v">V=1.0</span>
+        </div>
+        <div class="pyramid" aria-hidden="true">
+          <span class="pyr-1">А</span>
+          <span class="pyr-2">КС</span>
+          <span class="pyr-3 is-long">ЕССУАРЫ</span>
+          <span class="pyr-4">оптики</span>
+        </div>
+        <div class="tile-foot">
+          <span class="truncate pr-2">Смотреть в ВК</span>
+          <span class="cta-arrow"><i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i></span>
         </div>
       </a>
     </div>
   </div>
 </section>
 
-<!-- ═════════════ SERVICES ═════════════ -->
-<section id="services" class="relative py-24 sm:py-28 lg:py-36 bg-ivory-100 border-y border-zinc-200/70 overflow-hidden">
-  <div class="blob w-[520px] h-[520px] bg-bronze-100 opacity-50 -bottom-60 -left-40"></div>
-  <div class="relative max-w-[84rem] mx-auto px-5 sm:px-8 lg:px-10 grid lg:grid-cols-12 gap-12 lg:gap-16">
+<!-- ═════════════ SERVICES (СТРОКИ ТАБЛИЦЫ) ═════════════ -->
+<section id="services" class="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 border-b border-black bg-white">
+  <div class="max-w-7xl mx-auto grid lg:grid-cols-12 gap-10 lg:gap-12">
     <div class="lg:col-span-4">
-      <div class="lg:sticky lg:top-32">
-        <div class="reveal flex items-center gap-3 text-[11px] sm:text-[12px] font-medium tracking-luxe uppercase text-bronze">
-          <span class="tabular-nums">02</span><span class="w-8 h-px bg-bronze/50"></span><span>Наши услуги</span>
-        </div>
-        <h2 id="services-title" class="reveal mt-5 text-[clamp(2.5rem,5.4vw,4.4rem)] leading-[0.95] tracking-tightest font-medium text-ink text-balance">Что мы делаем</h2>
-        <p class="reveal mt-6 text-[16.5px] leading-relaxed text-ink-500 max-w-sm text-pretty">От диагностики до готовой пары — всё в&nbsp;одном салоне. Каждую деталь доводим вручную, а&nbsp;линзы изготавливаем на&nbsp;оборудовании Essilor.</p>
-        <div class="reveal mt-10 grid grid-cols-2 gap-px rounded-[1.25rem] overflow-hidden bg-zinc-200/80 ring-1 ring-zinc-200/80 max-w-sm">
-          <div class="bg-ivory-100 p-5">
-            <div class="font-serif lining-nums text-[2.6rem] leading-none text-ink">1 <span class="italic text-bronze text-[0.7em]">день</span></div>
-            <div class="mt-2 text-[12.5px] text-ink-500">изготовление очков</div>
-          </div>
-          <div class="bg-ivory-100 p-5">
-            <div class="font-serif lining-nums text-[2.6rem] leading-none text-ink">0,01</div>
-            <div class="mt-2 text-[12.5px] text-ink-500">точность, диоптрий</div>
-          </div>
-        </div>
-        <button data-action="open-booking" class="reveal btn-lux group mt-8 inline-flex items-center gap-3 rounded-full border border-ink/15 hover:border-ink bg-transparent hover:bg-ink text-ink hover:text-ivory pl-6 pr-1.5 py-1.5 text-[14.5px] font-medium">
-          Записаться в салон
-          <span class="arrow-swap w-9 h-9 rounded-full bg-ink text-ivory group-hover:bg-bronze transition-colors duration-700"><i data-lucide="arrow-up-right" class="w-4 h-4"></i><i data-lucide="arrow-up-right" class="w-4 h-4"></i></span>
-        </button>
+      <div class="font-mono text-xs uppercase tracking-widest text-med mb-2">
+        [ РАЗДЕЛ 02 · ПРОТОКОЛ УСЛУГ ]
       </div>
+      <h2 id="services-title" class="reveal font-chart font-black uppercase text-black tracking-tight text-2xl sm:text-4xl">
+        Что мы делаем
+      </h2>
+      <p class="reveal mt-4 text-base leading-relaxed text-black">
+        Полный цикл оптической помощи: от компьютерной диагностики рефракции до выточки сложных линз и ремонта оправ.
+      </p>
+      <div class="reveal mt-6 p-5 border border-med bg-white">
+        <div class="font-mono text-xs uppercase text-med">КОНТРОЛЬ КАЧЕСТВА</div>
+        <div class="font-chart font-black text-2xl text-black mt-1">V = 1.0</div>
+        <p class="text-xs text-black mt-1">Каждая пара очков проходит проверку межцентрового расстояния и диоптрий на диоптриметре.</p>
+      </div>
+      <button data-action="open-booking" class="reveal btn-clinical mt-6 w-full sm:w-auto text-xs uppercase tracking-widest px-6 py-4">
+        <span>Записаться к специалисту</span>
+        <i data-lucide="arrow-up-right" class="btn-arrow w-4 h-4"></i>
+      </button>
     </div>
 
-    <div id="services-list" class="lg:col-span-8 grid sm:grid-cols-2 gap-3 sm:gap-4" data-reveal-stagger>
-      <div class="service-card is-featured reveal group relative overflow-hidden rounded-[1.75rem] border p-6 sm:p-8 lg:p-10 flex flex-col min-h-[15rem] sm:min-h-[17rem] sm:col-span-2 bg-ink border-ink text-ivory">
-        <div class="relative flex items-start justify-between">
-          <div class="service-icon w-12 h-12 rounded-full border flex items-center justify-center border-white/15 bg-white/5 text-bronze-300 group-hover:bg-ivory group-hover:text-ink group-hover:border-ivory"><i data-lucide="eye" class="w-5 h-5"></i></div>
-          <span class="service-num text-[11px] tracking-luxe tabular-nums text-ivory/40">01</span>
-          <span class="service-arrow absolute right-0 top-0 w-10 h-10 rounded-full flex items-center justify-center bg-ivory text-ink"><i data-lucide="arrow-up-right" class="w-4 h-4"></i></span>
+    <div id="services-list" class="lg:col-span-8 flex flex-col">
+      <div class="service-row reveal group grid grid-cols-12 items-center gap-4 py-6 sm:py-7 px-4 sm:px-6">
+        <div class="col-span-3 sm:col-span-2 flex items-baseline gap-3">
+          <span class="service-opto text-3xl sm:text-4xl">Ш</span>
+          <span class="font-mono text-[11px] text-med hidden sm:inline">D=50.0</span>
         </div>
-        <div class="relative mt-auto pt-10">
-          <h3 class="text-xl sm:text-[1.65rem] font-medium tracking-[-0.02em] leading-snug text-ivory">Проверка зрения</h3>
-          <p class="mt-2.5 text-[15px] leading-relaxed max-w-md text-ivory/60">Профессиональная диагностика на современном оборудовании</p>
+        <div class="col-span-7 sm:col-span-8">
+          <h3 class="text-base sm:text-xl font-bold tracking-tight text-black">Проверка зрения</h3>
+          <p class="text-sm sm:text-base text-black mt-1">Профессиональная диагностика на современном оборудовании</p>
         </div>
-      </div>
-      <div class="service-card reveal group relative overflow-hidden rounded-[1.75rem] border p-6 sm:p-8 flex flex-col min-h-[15rem] sm:min-h-[17rem] bg-white/70 border-zinc-200/80 hover:border-bronze-300 hover:bg-white">
-        <div class="relative flex items-start justify-between">
-          <div class="service-icon w-12 h-12 rounded-full border flex items-center justify-center border-zinc-200 bg-ivory text-bronze group-hover:bg-ink group-hover:text-ivory group-hover:border-ink"><i data-lucide="zap" class="w-5 h-5"></i></div>
-          <span class="service-num text-[11px] tracking-luxe tabular-nums text-ink-400">02</span>
-          <span class="service-arrow absolute right-0 top-0 w-10 h-10 rounded-full flex items-center justify-center bg-ink text-ivory"><i data-lucide="arrow-up-right" class="w-4 h-4"></i></span>
-        </div>
-        <div class="relative mt-auto pt-10">
-          <h3 class="text-xl sm:text-[1.4rem] font-medium tracking-[-0.02em] leading-snug text-ink">Изготовление очков за 1 день</h3>
-          <p class="mt-2.5 text-[15px] leading-relaxed max-w-md text-ink-500">Станки Essilor (Франция) — точность до 0.01 диоптрии</p>
+        <div class="col-span-2 flex items-center justify-end">
+          <span class="font-mono text-xs font-semibold text-med">V=0.1</span>
         </div>
       </div>
-      <div class="service-card reveal group relative overflow-hidden rounded-[1.75rem] border p-6 sm:p-8 flex flex-col min-h-[15rem] sm:min-h-[17rem] bg-white/70 border-zinc-200/80 hover:border-bronze-300 hover:bg-white">
-        <div class="relative flex items-start justify-between">
-          <div class="service-icon w-12 h-12 rounded-full border flex items-center justify-center border-zinc-200 bg-ivory text-bronze group-hover:bg-ink group-hover:text-ivory group-hover:border-ink"><i data-lucide="palette" class="w-5 h-5"></i></div>
-          <span class="service-num text-[11px] tracking-luxe tabular-nums text-ink-400">03</span>
-          <span class="service-arrow absolute right-0 top-0 w-10 h-10 rounded-full flex items-center justify-center bg-ink text-ivory"><i data-lucide="arrow-up-right" class="w-4 h-4"></i></span>
+
+      <div class="service-row reveal group grid grid-cols-12 items-center gap-4 py-6 sm:py-7 px-4 sm:px-6">
+        <div class="col-span-3 sm:col-span-2 flex items-baseline gap-3">
+          <span class="service-opto text-3xl sm:text-4xl">Б</span>
+          <span class="font-mono text-[11px] text-med hidden sm:inline">D=25.0</span>
         </div>
-        <div class="relative mt-auto pt-10">
-          <h3 class="text-xl sm:text-[1.4rem] font-medium tracking-[-0.02em] leading-snug text-ink">Окраска и нанесение покрытий на линзы</h3>
-          <p class="mt-2.5 text-[15px] leading-relaxed max-w-md text-ink-500">Антибликовые, фотохромные и тонированные покрытия</p>
+        <div class="col-span-7 sm:col-span-8">
+          <h3 class="text-base sm:text-xl font-bold tracking-tight text-black">Изготовление очков за 1 день</h3>
+          <p class="text-sm sm:text-base text-black mt-1">Станки Essilor (Франция) — точность до 0.01 диоптрии</p>
         </div>
-      </div>
-      <div class="service-card reveal group relative overflow-hidden rounded-[1.75rem] border p-6 sm:p-8 flex flex-col min-h-[15rem] sm:min-h-[17rem] bg-white/70 border-zinc-200/80 hover:border-bronze-300 hover:bg-white">
-        <div class="relative flex items-start justify-between">
-          <div class="service-icon w-12 h-12 rounded-full border flex items-center justify-center border-zinc-200 bg-ivory text-bronze group-hover:bg-ink group-hover:text-ivory group-hover:border-ink"><i data-lucide="wrench" class="w-5 h-5"></i></div>
-          <span class="service-num text-[11px] tracking-luxe tabular-nums text-ink-400">04</span>
-          <span class="service-arrow absolute right-0 top-0 w-10 h-10 rounded-full flex items-center justify-center bg-ink text-ivory"><i data-lucide="arrow-up-right" class="w-4 h-4"></i></span>
-        </div>
-        <div class="relative mt-auto pt-10">
-          <h3 class="text-xl sm:text-[1.4rem] font-medium tracking-[-0.02em] leading-snug text-ink">Ремонт и регулировка оправ</h3>
-          <p class="mt-2.5 text-[15px] leading-relaxed max-w-md text-ink-500">Пайка, замена носоупоров, подгонка по форме лица</p>
+        <div class="col-span-2 flex items-center justify-end">
+          <span class="font-mono text-xs font-semibold text-med">V=0.2</span>
         </div>
       </div>
-      <div class="service-card reveal group relative overflow-hidden rounded-[1.75rem] border p-6 sm:p-8 flex flex-col min-h-[15rem] sm:min-h-[17rem] bg-white/70 border-zinc-200/80 hover:border-bronze-300 hover:bg-white">
-        <div class="relative flex items-start justify-between">
-          <div class="service-icon w-12 h-12 rounded-full border flex items-center justify-center border-zinc-200 bg-ivory text-bronze group-hover:bg-ink group-hover:text-ivory group-hover:border-ink"><i data-lucide="circle-dot" class="w-5 h-5"></i></div>
-          <span class="service-num text-[11px] tracking-luxe tabular-nums text-ink-400">05</span>
-          <span class="service-arrow absolute right-0 top-0 w-10 h-10 rounded-full flex items-center justify-center bg-ink text-ivory"><i data-lucide="arrow-up-right" class="w-4 h-4"></i></span>
+
+      <div class="service-row reveal group grid grid-cols-12 items-center gap-4 py-6 sm:py-7 px-4 sm:px-6">
+        <div class="col-span-3 sm:col-span-2 flex items-baseline gap-3">
+          <span class="service-opto text-3xl sm:text-4xl">М</span>
+          <span class="font-mono text-[11px] text-med hidden sm:inline">D=12.5</span>
         </div>
-        <div class="relative mt-auto pt-10">
-          <h3 class="text-xl sm:text-[1.4rem] font-medium tracking-[-0.02em] leading-snug text-ink">Подбор контактных линз</h3>
-          <p class="mt-2.5 text-[15px] leading-relaxed max-w-md text-ink-500">Мягкие и жёсткие линзы, однодневные и длительного ношения</p>
+        <div class="col-span-7 sm:col-span-8">
+          <h3 class="text-base sm:text-xl font-bold tracking-tight text-black">Окраска и нанесение покрытий на линзы</h3>
+          <p class="text-sm sm:text-base text-black mt-1">Антибликовые, фотохромные и тонированные покрытия</p>
+        </div>
+        <div class="col-span-2 flex items-center justify-end">
+          <span class="font-mono text-xs font-semibold text-med">V=0.4</span>
+        </div>
+      </div>
+
+      <div class="service-row reveal group grid grid-cols-12 items-center gap-4 py-6 sm:py-7 px-4 sm:px-6">
+        <div class="col-span-3 sm:col-span-2 flex items-baseline gap-3">
+          <span class="service-opto text-3xl sm:text-4xl">Н</span>
+          <span class="font-mono text-[11px] text-med hidden sm:inline">D=7.1</span>
+        </div>
+        <div class="col-span-7 sm:col-span-8">
+          <h3 class="text-base sm:text-xl font-bold tracking-tight text-black">Ремонт и регулировка оправ</h3>
+          <p class="text-sm sm:text-base text-black mt-1">Пайка, замена носоупоров, подгонка по форме лица</p>
+        </div>
+        <div class="col-span-2 flex items-center justify-end">
+          <span class="font-mono text-xs font-semibold text-med">V=0.7</span>
+        </div>
+      </div>
+
+      <div class="service-row reveal group grid grid-cols-12 items-center gap-4 py-6 sm:py-7 px-4 sm:px-6 border-b-2 border-b-signal">
+        <div class="col-span-3 sm:col-span-2 flex items-baseline gap-3">
+          <span class="service-opto text-3xl sm:text-4xl">К</span>
+          <span class="font-mono text-[11px] text-med hidden sm:inline">D=5.0</span>
+        </div>
+        <div class="col-span-7 sm:col-span-8">
+          <h3 class="text-base sm:text-xl font-bold tracking-tight text-black">Подбор контактных линз</h3>
+          <p class="text-sm sm:text-base text-black mt-1">Мягкие и жёсткие линзы, однодневные и длительного ношения</p>
+        </div>
+        <div class="col-span-2 flex items-center justify-end">
+          <span class="font-mono text-xs font-semibold text-signal">V=1.0</span>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ═════════════ VIDEO (скрыт по умолчанию, хуки сохранены) ═════════════ -->
-<section id="video-section" class="hidden py-24 lg:py-32 px-5 bg-ivory">
+<!-- ═════════════ VIDEO (скрыт по умолчанию, все ID сохранены) ═════════════ -->
+<section id="video-section" class="hidden py-16 lg:py-24 px-4 bg-white border-b border-black">
   <div class="max-w-4xl mx-auto">
-    <div class="flex flex-col items-center text-center mb-10">
-      <div class="flex items-center gap-3 text-[11px] sm:text-[12px] font-medium tracking-luxe uppercase text-bronze mb-5">
-        <i data-lucide="play-circle" class="w-4 h-4"></i><span>Видеогалерея</span>
-      </div>
-      <h2 class="text-[clamp(2rem,4.5vw,3.4rem)] leading-[1] tracking-tightest font-medium text-ink">Видеообзоры и наши работы</h2>
+    <div class="flex flex-col items-center text-center mb-8">
+      <div class="font-mono text-xs uppercase tracking-widest text-med mb-2">[ ВИДЕОГАЛЕРЕЯ ]</div>
+      <h2 class="font-chart font-black uppercase text-2xl lg:text-4xl text-black">Видеообзоры и наши работы</h2>
     </div>
 
-    <div class="rounded-[2rem] overflow-hidden bg-[#121212] text-white shadow-lux-xl border border-black/40 max-w-2xl mx-auto">
+    <div class="overflow-hidden bg-black text-white border-2 border-black max-w-2xl mx-auto">
       <div id="custom-player-box" tabindex="0" class="relative bg-black aspect-video w-full select-none group overflow-hidden outline-none">
         <video id="main-video-el" class="w-full h-full object-contain bg-black cursor-pointer" playsinline preload="metadata" poster="./images/AdobeStock_317116275_1_0.png.jpg"></video>
 
         <div id="vid-spinner" class="hidden absolute inset-0 pointer-events-none flex items-center justify-center z-20">
-          <div class="w-12 h-12 rounded-full border-4 border-white/25 border-t-bronze-300 animate-spin"></div>
+          <div class="w-12 h-12 rounded-full border-4 border-white/25 border-t-signal animate-spin"></div>
         </div>
 
-        <div id="vid-seek-toast" class="hidden absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 z-30 pointer-events-none bg-black/75 backdrop-blur px-4 py-2 rounded-full text-sm font-bold text-white shadow-lg"></div>
+        <div id="vid-seek-toast" class="hidden absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 z-30 pointer-events-none bg-black px-4 py-2 text-sm font-bold text-white border border-white"></div>
 
-        <div id="video-overlay-controls" class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-black/60 flex flex-col justify-between p-3 sm:p-4 transition-opacity duration-300 z-10">
+        <div id="video-overlay-controls" class="absolute inset-0 bg-black/40 flex flex-col justify-between p-3 sm:p-4 transition-opacity duration-300 z-10">
           <div class="flex items-center justify-between gap-3">
-            <div id="vid-top-title" class="text-xs sm:text-sm font-bold text-white/90 truncate pr-2"></div>
+            <div id="vid-top-title" class="text-xs sm:text-sm font-bold text-white truncate pr-2"></div>
             <div class="flex items-center gap-2 flex-shrink-0">
-              <button id="vid-speed-btn" type="button" class="px-2.5 h-8 rounded-full bg-black/55 hover:bg-black/80 text-xs font-extrabold text-white transition" title="Скорость воспроизведения">
-                1x
-              </button>
-              <button id="vid-pip-btn" type="button" class="w-8 h-8 rounded-full bg-black/55 hover:bg-black/80 flex items-center justify-center text-white transition" title="Картинка в картинке">
+              <button id="vid-speed-btn" type="button" class="px-2.5 h-8 bg-black border border-white text-xs font-extrabold text-white" title="Скорость воспроизведения">1x</button>
+              <button id="vid-pip-btn" type="button" class="w-8 h-8 bg-black border border-white flex items-center justify-center text-white" title="Картинка в картинке">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="15" rx="2"/><rect x="12" y="11" width="8" height="6" rx="1" fill="currentColor"/></svg>
               </button>
             </div>
           </div>
 
           <div class="flex items-center justify-center gap-8 sm:gap-14 my-auto">
-            <button id="vid-prev-btn" type="button" class="w-11 h-11 rounded-full bg-black/45 hover:bg-black/75 flex items-center justify-center text-white/90 hover:text-white transition transform active:scale-90" aria-label="Предыдущее видео">
+            <button id="vid-prev-btn" type="button" class="w-11 h-11 bg-black border border-white flex items-center justify-center text-white" aria-label="Предыдущее видео">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M6 6h2v12H6zm3.5 6 8.5 6V6z"/></svg>
             </button>
-            <button id="vid-play-btn" type="button" class="w-16 h-16 rounded-full bg-black/60 hover:bg-bronze flex items-center justify-center text-white transition transform active:scale-90 shadow-lg" aria-label="Воспроизвести / Пауза">
+            <button id="vid-play-btn" type="button" class="w-16 h-16 bg-signal flex items-center justify-center text-white" aria-label="Воспроизвести / Пауза">
               <svg id="vid-play-icon" width="34" height="34" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
               <svg id="vid-pause-icon" class="hidden" width="34" height="34" viewBox="0 0 24 24" fill="currentColor"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
             </button>
-            <button id="vid-next-btn" type="button" class="w-11 h-11 rounded-full bg-black/45 hover:bg-black/75 flex items-center justify-center text-white/90 hover:text-white transition transform active:scale-90" aria-label="Следующее видео">
+            <button id="vid-next-btn" type="button" class="w-11 h-11 bg-black border border-white flex items-center justify-center text-white" aria-label="Следующее видео">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"/></svg>
             </button>
           </div>
 
           <div class="flex flex-col gap-1.5" id="vid-bottom-bar">
             <div id="vid-progress-wrap" class="relative h-6 flex items-center cursor-pointer touch-none group/slider">
-              <div id="vid-hover-time" class="hidden absolute -top-7 -translate-x-1/2 bg-black/90 text-white text-[11px] font-bold px-2 py-0.5 rounded pointer-events-none border border-white/15">0:00</div>
-              <div class="w-full h-1.5 group-hover/slider:h-2 bg-white/25 rounded-full relative transition-all">
-                <div id="vid-buffer-bar" class="absolute inset-y-0 left-0 bg-white/40 rounded-full" ></div>
-                <div id="vid-progress-bar" class="absolute inset-y-0 left-0 bg-bronze-300 rounded-full" ></div>
-                <span id="vid-progress-thumb" class="left-0 w-4 h-4 bg-bronze-300 border-2 border-white rounded-full absolute top-1/2 -translate-y-1/2 -translate-x-1/2 shadow-md transition-transform group-hover/slider:scale-125" ></span>
+              <div id="vid-hover-time" class="hidden absolute -top-7 -translate-x-1/2 bg-black text-white text-[11px] font-bold px-2 py-0.5 pointer-events-none border border-white">0:00</div>
+              <div class="w-full h-1.5 bg-white/30 relative">
+                <div id="vid-buffer-bar" class="absolute inset-y-0 left-0 bg-white/50"></div>
+                <div id="vid-progress-bar" class="absolute inset-y-0 left-0 bg-signal"></div>
+                <span id="vid-progress-thumb" class="left-0 w-3.5 h-3.5 bg-signal border-2 border-white absolute top-1/2 -translate-y-1/2 -translate-x-1/2"></span>
               </div>
             </div>
 
             <div class="flex items-center justify-between gap-3 text-xs sm:text-sm font-semibold px-0.5">
               <div class="flex items-center gap-3">
                 <div class="flex items-center gap-2">
-                  <button id="vid-mute-btn" type="button" class="w-8 h-8 rounded-lg hover:bg-white/15 flex items-center justify-center text-white transition" aria-label="Звук">
+                  <button id="vid-mute-btn" type="button" class="w-8 h-8 flex items-center justify-center text-white" aria-label="Звук">
                     <svg id="vol-on-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
                     <svg id="vol-off-icon" class="hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/></svg>
                   </button>
-                  <input id="vid-volume-range" type="range" min="0" max="1" step="0.02" value="1"
-                    class="w-16 sm:w-20 h-1.5 accent-bronze-300 bg-white/30 rounded-lg cursor-pointer" aria-label="Громкость" />
+                  <input id="vid-volume-range" type="range" min="0" max="1" step="0.02" value="1" class="w-16 sm:w-20 h-1.5 accent-signal bg-white/30 cursor-pointer" aria-label="Громкость" />
                 </div>
-
                 <div class="tabular-nums">
                   <span id="vid-current-time" class="text-white">0:00</span>
                   <span class="text-white/50"> / </span>
                   <span id="vid-total-time" class="text-white/75">0:00</span>
                 </div>
               </div>
-
               <div class="flex items-center gap-1">
-                <button id="vid-fs-btn" type="button" class="w-8 h-8 rounded-lg hover:bg-white/15 flex items-center justify-center text-white transition" aria-label="На весь экран" title="На весь экран (F)">
+                <button id="vid-fs-btn" type="button" class="w-8 h-8 flex items-center justify-center text-white" aria-label="На весь экран" title="На весь экран (F)">
                   <i data-lucide="maximize-2" class="w-4 h-4"></i>
                 </button>
               </div>
@@ -468,160 +516,165 @@
         </div>
       </div>
 
-      <div class="bg-[#181818] px-5 pt-3 pb-3.5 border-b border-white/10">
-        <div class="w-10 h-1 bg-white/25 rounded-full mx-auto mb-3"></div>
+      <div class="bg-black px-5 pt-3 pb-3.5 border-b border-white/20">
         <div class="flex items-start justify-between gap-3">
           <div>
             <div class="flex items-baseline gap-2.5">
-              <h3 id="pl-header-title" class="text-lg sm:text-xl font-semibold text-white">Видеообзоры и работы</h3>
-              <span id="pl-counter" class="text-sm text-white/60 font-medium">1 / 4</span>
+              <h3 id="pl-header-title" class="text-lg sm:text-xl font-bold text-white">Видеообзоры и работы</h3>
+              <span id="pl-counter" class="text-sm text-white/60 font-mono">1 / 4</span>
             </div>
             <div class="flex items-center gap-1.5 text-xs sm:text-sm text-white/60 mt-0.5">
               <span id="pl-header-author">Оптика Юг • Сочи</span>
-              <span>•</span>
-              <i data-lucide="globe" class="w-3.5 h-3.5"></i>
             </div>
           </div>
-        </div>
-        <div class="flex items-center justify-between mt-3">
-          <div class="flex items-center gap-3">
-            <button id="pl-loop-btn" type="button" class="p-2 rounded-full hover:bg-white/10 text-white/75 hover:text-white transition" title="Повтор плейлиста">
-              <i data-lucide="repeat" class="w-5 h-5"></i>
-            </button>
-            <button id="pl-shuffle-btn" type="button" class="p-2 rounded-full hover:bg-white/10 text-white/75 hover:text-white transition" title="Перемешать">
-              <i data-lucide="shuffle" class="w-5 h-5"></i>
-            </button>
+          <div class="flex items-center gap-2">
+            <button id="pl-loop-btn" type="button" class="p-2 text-white/75 hover:text-white" title="Повтор плейлиста"><i data-lucide="repeat" class="w-5 h-5"></i></button>
+            <button id="pl-shuffle-btn" type="button" class="p-2 text-white/75 hover:text-white" title="Перемешать"><i data-lucide="shuffle" class="w-5 h-5"></i></button>
           </div>
         </div>
       </div>
-
-      <div id="pl-items-container" class="bg-[#1f1f1f] max-h-[380px] overflow-y-auto divide-y divide-white/5"></div>
+      <div id="pl-items-container" class="bg-black max-h-[380px] overflow-y-auto divide-y divide-white/15"></div>
     </div>
   </div>
 </section>
 
 <!-- ═════════════ VISION ENCYCLOPEDIA ═════════════ -->
-<section id="vision" class="relative py-24 sm:py-28 lg:py-36">
-  <div class="max-w-[84rem] mx-auto px-5 sm:px-8 lg:px-10">
-    <div class="flex flex-col items-center text-center mb-12 lg:mb-16">
-      <div class="reveal flex items-center gap-3 text-[11px] sm:text-[12px] font-medium tracking-luxe uppercase text-bronze">
-        <span class="tabular-nums">03</span><span class="w-8 h-px bg-bronze/50"></span><span>Энциклопедия зрения</span>
+<section id="vision" class="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 border-b border-black bg-white">
+  <div class="max-w-7xl mx-auto">
+    <div class="reveal flex flex-col md:flex-row md:items-end justify-between gap-4 pb-6 mb-10 border-b-2 border-black">
+      <div>
+        <div class="font-mono text-xs uppercase tracking-widest text-med mb-2">
+          [ РАЗДЕЛ 03 · СПРАВОЧНИК РЕФРАКЦИИ ]
+        </div>
+        <h2 class="font-chart font-black uppercase text-black tracking-tight text-2xl sm:text-4xl lg:text-5xl">
+          Когда нужно носить очки?
+        </h2>
       </div>
-      <h2 class="reveal mt-5 text-[clamp(2.5rem,6vw,4.9rem)] leading-[0.95] tracking-tightest font-medium text-ink text-balance max-w-4xl">Когда нужно носить <span class="font-serif italic font-medium text-bronze tracking-[-0.02em]">очки?</span></h2>
-      <p class="reveal mt-6 text-[16.5px] sm:text-lg text-ink-500 max-w-xl">Выберите нарушение зрения, чтобы узнать подробнее</p>
+      <p class="text-sm sm:text-base text-black">
+        Выберите нарушение рефракции для просмотра клинической справки
+      </p>
     </div>
 
-    <div class="reveal flex justify-center mb-12 lg:mb-16">
-      <div id="vision-tabs" role="tablist" aria-label="Нарушения зрения" class="segmented grid grid-cols-2 sm:inline-flex gap-1 p-1.5 rounded-[1.6rem] sm:rounded-full bg-zinc-200/60 ring-1 ring-inset ring-black/[0.04] w-full sm:w-auto max-w-md sm:max-w-none">
-        <span class="segmented-indicator" aria-hidden="true"></span>
-        <button type="button" role="tab" class="tab-btn active rounded-full px-4 sm:px-6 py-3 text-[14px] sm:text-[15px] font-medium text-center whitespace-nowrap" data-tab="myopia">Близорукость</button>
-        <button type="button" role="tab" class="tab-btn rounded-full px-4 sm:px-6 py-3 text-[14px] sm:text-[15px] font-medium text-center whitespace-nowrap" data-tab="farsight">Дальнозоркость</button>
-        <button type="button" role="tab" class="tab-btn rounded-full px-4 sm:px-6 py-3 text-[14px] sm:text-[15px] font-medium text-center whitespace-nowrap" data-tab="astig">Астигматизм</button>
-        <button type="button" role="tab" class="tab-btn rounded-full px-4 sm:px-6 py-3 text-[14px] sm:text-[15px] font-medium text-center whitespace-nowrap" data-tab="presby">Пресбиопия</button>
-      </div>
+    <!-- Clinical Tab Selector -->
+    <div id="vision-tabs" role="tablist" aria-label="Нарушения зрения" class="reveal grid grid-cols-2 sm:grid-cols-4 border border-black mb-10">
+      <button type="button" role="tab" class="tab-btn active py-4 px-3 text-xs sm:text-sm font-bold uppercase tracking-wider text-center border-b sm:border-b-0 border-black" data-tab="myopia">
+        <span class="font-mono text-[10px] text-med block mb-0.5">− D · МИОПИЯ</span>
+        Близорукость
+      </button>
+      <button type="button" role="tab" class="tab-btn py-4 px-3 text-xs sm:text-sm font-bold uppercase tracking-wider text-center border-b sm:border-b-0 border-black" data-tab="farsight">
+        <span class="font-mono text-[10px] text-med block mb-0.5">+ D · ГИПЕРМЕТРОПИЯ</span>
+        Дальнозоркость
+      </button>
+      <button type="button" role="tab" class="tab-btn py-4 px-3 text-xs sm:text-sm font-bold uppercase tracking-wider text-center" data-tab="astig">
+        <span class="font-mono text-[10px] text-med block mb-0.5">CYL · ТОРИКА</span>
+        Астигматизм
+      </button>
+      <button type="button" role="tab" class="tab-btn py-4 px-3 text-xs sm:text-sm font-bold uppercase tracking-wider text-center" data-tab="presby">
+        <span class="font-mono text-[10px] text-med block mb-0.5">ADD · 40+ ЛЕТ</span>
+        Пресбиопия
+      </button>
     </div>
 
-    <div id="vision-panels" class="reveal">
+    <div id="vision-panels">
       <div class="tab-panel active" data-panel="myopia" role="tabpanel">
-        <div class="w-full grid lg:grid-cols-12 gap-8 lg:gap-16 items-center">
-          <div class="panel-media lg:col-span-7 sheen relative rounded-[2rem] overflow-hidden aspect-[4/3] bg-ivory-200 shadow-lux-lg">
-            <img src="./images/18269.jpg" alt="Близорукость" class="vision-img absolute inset-0" />
-            <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
-            <span class="absolute left-4 bottom-4 sm:left-6 sm:bottom-6 glass-dark rounded-full px-4 py-2 text-white text-[12px] sm:text-[13px] font-medium">Рассеивающие (минусовые) линзы</span>
+        <div class="grid md:grid-cols-12 border border-black">
+          <div class="md:col-span-5 aspect-[4/3] md:aspect-auto border-b md:border-b-0 md:border-r border-black relative bg-white overflow-hidden">
+            <img src="./images/18269.jpg" alt="Близорукость" class="vision-img" />
+            <div class="absolute top-3 left-3 bg-white border border-black px-2.5 py-1 font-mono text-[11px] font-bold text-black">
+              01 / 04 · РАССЕИВАЮЩИЕ (−)
+            </div>
           </div>
-          <div class="panel-copy lg:col-span-5 flex flex-col gap-5">
-            <span class="text-[11px] font-medium tracking-luxe uppercase text-ink-400 tabular-nums">01 / 04</span>
-            <h3 class="text-[2rem] sm:text-[2.4rem] lg:text-[2.75rem] leading-[1.02] tracking-[-0.035em] font-medium text-ink">Близорукость <span class="font-serif italic text-bronze tracking-[-0.01em]">(миопия)</span></h3>
-            <p class="text-ink-500 text-[16px] lg:text-[17px] leading-[1.7]">При близорукости изображения удалённых предметов фокусируются перед сетчаткой, а не на ней. Человек хорошо видит вблизи, но плохо — вдаль. Это самое распространённое нарушение рефракции в мире.</p>
-            <p class="text-ink-500 text-[16px] lg:text-[17px] leading-[1.7]">Назначаются рассеивающие (минусовые) линзы. Современные тонкие минеральные и органические линзы с асферическим дизайном делают очки лёгкими и незаметными.</p>
-            <div class="advice-card relative mt-2 rounded-[1.5rem] border border-zinc-200/80 bg-white p-6 sm:p-7 shadow-lux overflow-hidden">
-              <i data-lucide="quote" class="absolute right-5 top-5 w-12 h-12 text-bronze-100"></i>
-              <div class="relative flex items-center gap-3 mb-4">
-                <span class="w-10 h-10 rounded-full bg-bronze-50 ring-1 ring-bronze-100 text-bronze flex items-center justify-center"><i data-lucide="stethoscope" class="w-[18px] h-[18px]"></i></span>
-                <div class="leading-tight">
-                  <div class="text-[14px] font-semibold text-ink">Совет офтальмолога</div>
-                  <div class="text-[12px] text-ink-400 mt-0.5">Оптика Юг · Сочи</div>
-                </div>
+          <div class="md:col-span-7 p-6 sm:p-8 lg:p-10 flex flex-col justify-between gap-5 bg-white">
+            <div>
+              <div class="font-mono text-xs text-med uppercase mb-2">[ КОД МКБ H52.1 · МИОПИЯ ]</div>
+              <h3 class="font-chart font-black uppercase text-xl sm:text-3xl text-black">Близорукость (миопия)</h3>
+              <p class="text-black text-base leading-relaxed mt-4">При близорукости изображения удалённых предметов фокусируются перед сетчаткой, а не на ней. Человек хорошо видит вблизи, но плохо — вдаль. Это самое распространённое нарушение рефракции в мире.</p>
+              <p class="text-black text-base leading-relaxed mt-3">Назначаются рассеивающие (минусовые) линзы. Современные тонкие минеральные и органические линзы с асферическим дизайном делают очки лёгкими и незаметными.</p>
+            </div>
+            <div class="border border-med p-5 bg-white">
+              <div class="flex items-center justify-between font-mono text-xs uppercase pb-2 mb-2 border-b border-med">
+                <span class="text-med font-bold">Совет офтальмолога</span>
+                <span class="text-signal font-bold">V = 1.0</span>
               </div>
-              <p class="relative font-serif italic text-[1.3rem] sm:text-[1.4rem] leading-[1.35] text-ink">Проверяйте зрение раз в год. При прогрессировании миопии у детей возможна ортокератология.</p>
+              <p class="text-sm sm:text-base text-black leading-relaxed">Проверяйте зрение раз в год. При прогрессировании миопии у детей возможна ортокератология.</p>
             </div>
           </div>
         </div>
       </div>
+
       <div class="tab-panel" data-panel="farsight" role="tabpanel">
-        <div class="w-full grid lg:grid-cols-12 gap-8 lg:gap-16 items-center">
-          <div class="panel-media lg:col-span-7 sheen relative rounded-[2rem] overflow-hidden aspect-[4/3] bg-ivory-200 shadow-lux-lg">
-            <img src="./images/18267.jpg" alt="Дальнозоркость" class="vision-img absolute inset-0" loading="lazy" />
-            <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
-            <span class="absolute left-4 bottom-4 sm:left-6 sm:bottom-6 glass-dark rounded-full px-4 py-2 text-white text-[12px] sm:text-[13px] font-medium">Собирающие (плюсовые) линзы</span>
+        <div class="grid md:grid-cols-12 border border-black">
+          <div class="md:col-span-5 aspect-[4/3] md:aspect-auto border-b md:border-b-0 md:border-r border-black relative bg-white overflow-hidden">
+            <img src="./images/18267.jpg" alt="Дальнозоркость" class="vision-img" loading="lazy" />
+            <div class="absolute top-3 left-3 bg-white border border-black px-2.5 py-1 font-mono text-[11px] font-bold text-black">
+              02 / 04 · СОБИРАЮЩИЕ (+)
+            </div>
           </div>
-          <div class="panel-copy lg:col-span-5 flex flex-col gap-5">
-            <span class="text-[11px] font-medium tracking-luxe uppercase text-ink-400 tabular-nums">02 / 04</span>
-            <h3 class="text-[2rem] sm:text-[2.4rem] lg:text-[2.75rem] leading-[1.02] tracking-[-0.035em] font-medium text-ink">Дальнозоркость <span class="font-serif italic text-bronze tracking-[-0.01em]">(гиперметропия)</span></h3>
-            <p class="text-ink-500 text-[16px] lg:text-[17px] leading-[1.7]">При дальнозоркости фокус изображения формируется за сетчаткой. Вблизи видно хуже, вдаль — лучше. Часто сопровождается головными болями и усталостью глаз при длительной работе.</p>
-            <p class="text-ink-500 text-[16px] lg:text-[17px] leading-[1.7]">Корректируется собирающими (плюсовыми) линзами. Прогрессивные линзы позволяют видеть на всех расстояниях без смены очков.</p>
-            <div class="advice-card relative mt-2 rounded-[1.5rem] border border-zinc-200/80 bg-white p-6 sm:p-7 shadow-lux overflow-hidden">
-              <i data-lucide="quote" class="absolute right-5 top-5 w-12 h-12 text-bronze-100"></i>
-              <div class="relative flex items-center gap-3 mb-4">
-                <span class="w-10 h-10 rounded-full bg-bronze-50 ring-1 ring-bronze-100 text-bronze flex items-center justify-center"><i data-lucide="stethoscope" class="w-[18px] h-[18px]"></i></span>
-                <div class="leading-tight">
-                  <div class="text-[14px] font-semibold text-ink">Совет офтальмолога</div>
-                  <div class="text-[12px] text-ink-400 mt-0.5">Оптика Юг · Сочи</div>
-                </div>
+          <div class="md:col-span-7 p-6 sm:p-8 lg:p-10 flex flex-col justify-between gap-5 bg-white">
+            <div>
+              <div class="font-mono text-xs text-med uppercase mb-2">[ КОД МКБ H52.0 · ГИПЕРМЕТРОПИЯ ]</div>
+              <h3 class="font-chart font-black uppercase text-xl sm:text-3xl text-black">Дальнозоркость (гиперметропия)</h3>
+              <p class="text-black text-base leading-relaxed mt-4">При дальнозоркости фокус изображения формируется за сетчаткой. Вблизи видно хуже, вдаль — лучше. Часто сопровождается головными болями и усталостью глаз при длительной работе.</p>
+              <p class="text-black text-base leading-relaxed mt-3">Корректируется собирающими (плюсовыми) линзами. Прогрессивные линзы позволяют видеть на всех расстояниях без смены очков.</p>
+            </div>
+            <div class="border border-med p-5 bg-white">
+              <div class="flex items-center justify-between font-mono text-xs uppercase pb-2 mb-2 border-b border-med">
+                <span class="text-med font-bold">Совет офтальмолога</span>
+                <span class="text-signal font-bold">V = 1.0</span>
               </div>
-              <p class="relative font-serif italic text-[1.3rem] sm:text-[1.4rem] leading-[1.35] text-ink">Детям до 16 лет рекомендуется ежегодная проверка, так как слабая гиперметропия часто не ощущается.</p>
+              <p class="text-sm sm:text-base text-black leading-relaxed">Детям до 16 лет рекомендуется ежегодная проверка, так как слабая гиперметропия часто не ощущается.</p>
             </div>
           </div>
         </div>
       </div>
+
       <div class="tab-panel" data-panel="astig" role="tabpanel">
-        <div class="w-full grid lg:grid-cols-12 gap-8 lg:gap-16 items-center">
-          <div class="panel-media lg:col-span-7 sheen relative rounded-[2rem] overflow-hidden aspect-[4/3] bg-ivory-200 shadow-lux-lg">
-            <img src="./images/18273.jpg" alt="Астигматизм" class="vision-img absolute inset-0" loading="lazy" />
-            <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
-            <span class="absolute left-4 bottom-4 sm:left-6 sm:bottom-6 glass-dark rounded-full px-4 py-2 text-white text-[12px] sm:text-[13px] font-medium">Цилиндрические и торические линзы</span>
+        <div class="grid md:grid-cols-12 border border-black">
+          <div class="md:col-span-5 aspect-[4/3] md:aspect-auto border-b md:border-b-0 md:border-r border-black relative bg-white overflow-hidden">
+            <img src="./images/18273.jpg" alt="Астигматизм" class="vision-img" loading="lazy" />
+            <div class="absolute top-3 left-3 bg-white border border-black px-2.5 py-1 font-mono text-[11px] font-bold text-black">
+              03 / 04 · ЦИЛИНДРИЧЕСКИЕ (CYL)
+            </div>
           </div>
-          <div class="panel-copy lg:col-span-5 flex flex-col gap-5">
-            <span class="text-[11px] font-medium tracking-luxe uppercase text-ink-400 tabular-nums">03 / 04</span>
-            <h3 class="text-[2rem] sm:text-[2.4rem] lg:text-[2.75rem] leading-[1.02] tracking-[-0.035em] font-medium text-ink">Астигматизм</h3>
-            <p class="text-ink-500 text-[16px] lg:text-[17px] leading-[1.7]">Неправильная форма роговицы или хрусталика приводит к тому, что лучи света фокусируются в разных точках. Изображение получается размытым, искажённым или двоящимся на всех расстояниях.</p>
-            <p class="text-ink-500 text-[16px] lg:text-[17px] leading-[1.7]">Корригируется цилиндрическими или торическими линзами. Для контактных линз используются специальные торические линзы с маркерами ориентации.</p>
-            <div class="advice-card relative mt-2 rounded-[1.5rem] border border-zinc-200/80 bg-white p-6 sm:p-7 shadow-lux overflow-hidden">
-              <i data-lucide="quote" class="absolute right-5 top-5 w-12 h-12 text-bronze-100"></i>
-              <div class="relative flex items-center gap-3 mb-4">
-                <span class="w-10 h-10 rounded-full bg-bronze-50 ring-1 ring-bronze-100 text-bronze flex items-center justify-center"><i data-lucide="stethoscope" class="w-[18px] h-[18px]"></i></span>
-                <div class="leading-tight">
-                  <div class="text-[14px] font-semibold text-ink">Совет офтальмолога</div>
-                  <div class="text-[12px] text-ink-400 mt-0.5">Оптика Юг · Сочи</div>
-                </div>
+          <div class="md:col-span-7 p-6 sm:p-8 lg:p-10 flex flex-col justify-between gap-5 bg-white">
+            <div>
+              <div class="font-mono text-xs text-med uppercase mb-2">[ КОД МКБ H52.2 · АСТИГМАТИЗМ ]</div>
+              <h3 class="font-chart font-black uppercase text-xl sm:text-3xl text-black">Астигматизм</h3>
+              <p class="text-black text-base leading-relaxed mt-4">Неправильная форма роговицы или хрусталика приводит к тому, что лучи света фокусируются в разных точках. Изображение получается размытым, искажённым или двоящимся на всех расстояниях.</p>
+              <p class="text-black text-base leading-relaxed mt-3">Корригируется цилиндрическими или торическими линзами. Для контактных линз используются специальные торические линзы с маркерами ориентации.</p>
+            </div>
+            <div class="border border-med p-5 bg-white">
+              <div class="flex items-center justify-between font-mono text-xs uppercase pb-2 mb-2 border-b border-med">
+                <span class="text-med font-bold">Совет офтальмолога</span>
+                <span class="text-signal font-bold">V = 1.0</span>
               </div>
-              <p class="relative font-serif italic text-[1.3rem] sm:text-[1.4rem] leading-[1.35] text-ink">Астигматизм часто сочетается с миопией или гиперметропией. Важно подобрать комбинированные линзы.</p>
+              <p class="text-sm sm:text-base text-black leading-relaxed">Астигматизм часто сочетается с миопией или гиперметропией. Важно подобрать комбинированные линзы.</p>
             </div>
           </div>
         </div>
       </div>
+
       <div class="tab-panel" data-panel="presby" role="tabpanel">
-        <div class="w-full grid lg:grid-cols-12 gap-8 lg:gap-16 items-center">
-          <div class="panel-media lg:col-span-7 sheen relative rounded-[2rem] overflow-hidden aspect-[4/3] bg-ivory-200 shadow-lux-lg">
-            <img src="./images/2150801446.jpg" alt="Пресбиопия" class="vision-img absolute inset-0" loading="lazy" />
-            <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
-            <span class="absolute left-4 bottom-4 sm:left-6 sm:bottom-6 glass-dark rounded-full px-4 py-2 text-white text-[12px] sm:text-[13px] font-medium">Прогрессивные линзы</span>
+        <div class="grid md:grid-cols-12 border border-black">
+          <div class="md:col-span-5 aspect-[4/3] md:aspect-auto border-b md:border-b-0 md:border-r border-black relative bg-white overflow-hidden">
+            <img src="./images/2150801446.jpg" alt="Пресбиопия" class="vision-img" loading="lazy" />
+            <div class="absolute top-3 left-3 bg-white border border-black px-2.5 py-1 font-mono text-[11px] font-bold text-black">
+              04 / 04 · ПРОГРЕССИВНЫЕ (ADD)
+            </div>
           </div>
-          <div class="panel-copy lg:col-span-5 flex flex-col gap-5">
-            <span class="text-[11px] font-medium tracking-luxe uppercase text-ink-400 tabular-nums">04 / 04</span>
-            <h3 class="text-[2rem] sm:text-[2.4rem] lg:text-[2.75rem] leading-[1.02] tracking-[-0.035em] font-medium text-ink">Пресбиопия <span class="font-serif italic text-bronze tracking-[-0.01em]">«возрастная» дальнозоркость</span></h3>
-            <p class="text-ink-500 text-[16px] lg:text-[17px] leading-[1.7]">После 40 лет хрусталик глаза постепенно теряет эластичность, и человек начинает хуже видеть вблизи. Это естественный физиологический процесс, не патология.</p>
-            <p class="text-ink-500 text-[16px] lg:text-[17px] leading-[1.7]">Решение — прогрессивные линзы, которые обеспечивают чёткое зрение на всех расстояниях: вдаль, на среднем расстоянии и вблизи. Без видимой границы между зонами.</p>
-            <div class="advice-card relative mt-2 rounded-[1.5rem] border border-zinc-200/80 bg-white p-6 sm:p-7 shadow-lux overflow-hidden">
-              <i data-lucide="quote" class="absolute right-5 top-5 w-12 h-12 text-bronze-100"></i>
-              <div class="relative flex items-center gap-3 mb-4">
-                <span class="w-10 h-10 rounded-full bg-bronze-50 ring-1 ring-bronze-100 text-bronze flex items-center justify-center"><i data-lucide="stethoscope" class="w-[18px] h-[18px]"></i></span>
-                <div class="leading-tight">
-                  <div class="text-[14px] font-semibold text-ink">Совет офтальмолога</div>
-                  <div class="text-[12px] text-ink-400 mt-0.5">Оптика Юг · Сочи</div>
-                </div>
+          <div class="md:col-span-7 p-6 sm:p-8 lg:p-10 flex flex-col justify-between gap-5 bg-white">
+            <div>
+              <div class="font-mono text-xs text-med uppercase mb-2">[ КОД МКБ H52.4 · ПРЕСБИОПИЯ ]</div>
+              <h3 class="font-chart font-black uppercase text-xl sm:text-3xl text-black">Пресбиопия («возрастная» дальнозоркость)</h3>
+              <p class="text-black text-base leading-relaxed mt-4">После 40 лет хрусталик глаза постепенно теряет эластичность, и человек начинает хуже видеть вблизи. Это естественный физиологический процесс, не патология.</p>
+              <p class="text-black text-base leading-relaxed mt-3">Решение — прогрессивные линзы, которые обеспечивают чёткое зрение на всех расстояниях: вдаль, на среднем расстоянии и вблизи. Без видимой границы между зонами.</p>
+            </div>
+            <div class="border border-med p-5 bg-white">
+              <div class="flex items-center justify-between font-mono text-xs uppercase pb-2 mb-2 border-b border-med">
+                <span class="text-med font-bold">Совет офтальмолога</span>
+                <span class="text-signal font-bold">V = 1.0</span>
               </div>
-              <p class="relative font-serif italic text-[1.3rem] sm:text-[1.4rem] leading-[1.35] text-ink">Прогрессивные линзы Essilor Varilux — лучшее решение. Наши специалисты помогут с подбором и адаптацией.</p>
+              <p class="text-sm sm:text-base text-black leading-relaxed">Прогрессивные линзы Essilor Varilux — лучшее решение. Наши специалисты помогут с подбором и адаптацией.</p>
             </div>
           </div>
         </div>
@@ -632,184 +685,164 @@
 </main>
 
 <!-- ═════════════ FOOTER ═════════════ -->
-<footer id="contacts" class="relative bg-ink text-ivory rounded-t-[2rem] sm:rounded-t-[3rem] overflow-hidden pb-28 md:pb-10">
-  <div class="absolute inset-0 opacity-[0.22]">
-    <img src="./images/catalog_accessories.jpg" alt="" loading="lazy" class="w-full h-full object-cover object-[50%_60%]" />
-    <div class="absolute inset-0 bg-gradient-to-b from-ink/40 via-ink/90 to-ink"></div>
-  </div>
-  <div class="relative max-w-[84rem] mx-auto px-5 sm:px-8 lg:px-10 pt-20 sm:pt-28 lg:pt-32">
-    <div class="grid lg:grid-cols-12 gap-10 items-end pb-16 lg:pb-24">
-      <div class="lg:col-span-8">
-        <div class="reveal flex items-center gap-3 text-[11px] sm:text-[12px] font-medium tracking-luxe uppercase text-bronze-300">
-          <span class="tabular-nums">04</span><span class="w-8 h-px bg-bronze-300/50"></span><span>Запись в салон</span>
+<footer id="contacts" class="bg-white text-black pt-16 sm:pt-20 pb-24 md:pb-12 px-4 sm:px-6 lg:px-8">
+  <div class="max-w-7xl mx-auto">
+    <div class="font-mono text-xs uppercase tracking-widest text-med mb-2">
+      [ РАЗДЕЛ 04 · КОНТАКТНЫЕ ДАННЫЕ САЛОНА ]
+    </div>
+
+    <div class="grid md:grid-cols-12 border border-black mb-10">
+      <div class="md:col-span-5 p-6 sm:p-8 border-b md:border-b-0 md:border-r border-black flex flex-col justify-between gap-6">
+        <div>
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-11 h-11 border border-black flex items-center justify-center font-chart font-black text-base">ШБ</div>
+            <div class="font-chart font-black uppercase text-xl">Оптика <span class="text-signal">Юг</span></div>
+          </div>
+          <p data-bind="about" class="text-black text-sm sm:text-base leading-relaxed">Премиальный салон оптики в Сочи. Изготовление очков за 1 день. Европейские бренды. Профессиональная проверка зрения.</p>
         </div>
-        <h2 class="hero-title reveal mt-6 text-[clamp(2.4rem,6.2vw,5.4rem)] leading-[0.95] tracking-tightest font-medium text-balance">Подберём очки, в&nbsp;которых вы будете видеть <em class="!text-bronze-300">безупречно</em></h2>
-      </div>
-      <div class="lg:col-span-4 flex flex-col gap-4 lg:items-end">
-        <button data-action="open-booking" class="reveal btn-lux group inline-flex items-center justify-between gap-5 rounded-full bg-ivory hover:bg-white text-ink pl-7 pr-2 py-2 text-[15px] font-medium w-full sm:w-auto">
-          <span>Оставить заявку</span>
-          <span class="arrow-swap w-11 h-11 rounded-full bg-ink text-ivory"><i data-lucide="arrow-up-right" class="w-4 h-4"></i><i data-lucide="arrow-up-right" class="w-4 h-4"></i></span>
+        <button data-action="open-booking" class="btn-clinical w-full sm:w-fit text-xs uppercase tracking-widest px-6 py-3.5">
+          <span>Записаться на приём</span>
+          <i data-lucide="arrow-up-right" class="btn-arrow w-4 h-4"></i>
         </button>
-        <a href="tel:+79884036442" data-bind-tel="phoneMain" class="reveal group inline-flex items-center gap-2 text-[15px] text-ivory/70 hover:text-ivory transition-colors duration-500">
-          или позвоните: <span data-bind="phoneMain" class="link-underline tabular-nums text-ivory">+7 (988) 403-64-42</span>
-        </a>
+      </div>
+
+      <div class="md:col-span-4 p-6 sm:p-8 border-b md:border-b-0 md:border-r border-black flex flex-col justify-between gap-4">
+        <div>
+          <div class="font-mono text-xs uppercase text-med mb-3">АДРЕС И РЕЖИМ РАБОТЫ</div>
+          <div class="text-base font-bold text-black">
+            <span data-bind="address">г. Сочи, Курортный пр-т, д. 50</span>
+          </div>
+          <div class="text-sm text-black mt-1">(<span data-bind="addressNote">гостиница «Магнолия»</span>)</div>
+        </div>
+        <div class="pt-4 border-t border-med">
+          <div class="font-mono text-[11px] uppercase text-med">ЧАСЫ ПРИЁМА</div>
+          <div data-bind="hours" class="text-sm sm:text-base font-semibold text-black mt-0.5">с 10:00 до 19:00, без выходных</div>
+        </div>
+      </div>
+
+      <div class="md:col-span-3 p-6 sm:p-8 flex flex-col justify-between gap-4">
+        <div>
+          <div class="font-mono text-xs uppercase text-med mb-3">ТЕЛЕФОНЫ</div>
+          <div class="font-mono text-[11px] uppercase text-black">Оптика</div>
+          <a href="tel:+79884036442" data-bind-tel="phoneMain" data-bind="phoneMain" class="block font-mono text-lg sm:text-xl font-bold text-black hover:text-med transition-colors mt-0.5">+7 (988) 403-64-42</a>
+        </div>
+        <div class="pt-4 border-t border-black">
+          <div class="font-mono text-[11px] uppercase text-black">Мастер</div>
+          <a href="tel:+79951239686" data-bind-tel="phoneMaster" data-bind="phoneMaster" class="block font-mono text-lg sm:text-xl font-bold text-black hover:text-med transition-colors mt-0.5">+7 (995) 123-96-86</a>
+        </div>
       </div>
     </div>
 
-    <div class="hairline-x-dark"></div>
-
-    <div class="grid sm:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8 py-14 lg:py-16">
-      <div class="lg:col-span-4">
-        <div class="flex items-center gap-3 mb-5">
-          <img src="./images/logo_optika_yug.png" alt="Оптика Юг" class="h-12 w-12 rounded-full bg-white p-0.5 object-contain" />
-          <div class="text-[17px] font-semibold tracking-[-0.02em]">Оптика <span class="text-bronze-300">Юг</span></div>
-        </div>
-        <p data-bind="about" class="text-ivory/60 text-[15px] leading-relaxed max-w-sm">Премиальный салон оптики в Сочи. Изготовление очков за 1 день. Европейские бренды. Профессиональная проверка зрения.</p>
-      </div>
-      <div class="lg:col-span-3">
-        <div class="text-[11px] font-medium uppercase tracking-luxe text-ivory/40 mb-5">Адрес</div>
-        <div class="flex flex-col gap-4">
-          <div class="flex items-start gap-3">
-            <i data-lucide="map-pin" class="w-4 h-4 text-bronze-300 mt-1 flex-shrink-0"></i>
-            <span class="text-[15px] text-ivory/85 leading-snug"><span data-bind="address">г. Сочи, Курортный пр-т, д. 50</span><br /><span class="text-ivory/50">(<span data-bind="addressNote">гостиница «Магнолия»</span>)</span></span>
-          </div>
-          <div class="flex items-start gap-3">
-            <i data-lucide="clock" class="w-4 h-4 text-bronze-300 mt-1 flex-shrink-0"></i>
-            <span data-bind="hours" class="text-[15px] text-ivory/85">с 10:00 до 19:00, без выходных</span>
-          </div>
-        </div>
-      </div>
-      <div class="lg:col-span-3">
-        <div class="text-[11px] font-medium uppercase tracking-luxe text-ivory/40 mb-5">Телефоны</div>
-        <div class="flex flex-col gap-5">
-          <div>
-            <div class="text-[12px] text-ivory/45 mb-1">Оптика</div>
-            <a href="tel:+79884036442" data-bind-tel="phoneMain" data-bind="phoneMain" class="text-[1.35rem] font-medium tracking-[-0.02em] tabular-nums text-ivory hover:text-bronze-300 transition-colors duration-500">+7 (988) 403-64-42</a>
-          </div>
-          <div>
-            <div class="text-[12px] text-ivory/45 mb-1">Мастер</div>
-            <a href="tel:+79951239686" data-bind-tel="phoneMaster" data-bind="phoneMaster" class="text-[1.35rem] font-medium tracking-[-0.02em] tabular-nums text-ivory hover:text-bronze-300 transition-colors duration-500">+7 (995) 123-96-86</a>
-          </div>
-        </div>
-      </div>
-      <div class="lg:col-span-2">
-        <div class="text-[11px] font-medium uppercase tracking-luxe text-ivory/40 mb-5">Разделы</div>
-        <nav aria-label="Навигация в подвале" class="flex flex-col gap-3 text-[15px] text-ivory/75">
-          <a href="#catalog" class="link-underline w-fit hover:text-ivory transition-colors">Каталог</a>
-          <a href="#services" class="link-underline w-fit hover:text-ivory transition-colors">Услуги</a>
-          <a href="#vision" class="link-underline w-fit hover:text-ivory transition-colors">О зрении</a>
-          <a href="https://vk.ru/opticasouth" target="_blank" rel="noopener" class="link-underline w-fit hover:text-ivory transition-colors">ВКонтакте</a>
-        </nav>
-      </div>
-    </div>
-
-    <div class="footer-word font-medium select-none pointer-events-none whitespace-nowrap -mb-[0.06em]" aria-hidden="true">Оптика&nbsp;Юг</div>
-
-    <div class="border-t border-white/10 pt-7 flex flex-col md:flex-row items-center justify-between gap-4 text-center">
-      <p class="text-[13px] text-ivory/45">© 2024–2026 Оптика Юг. Все права защищены.</p>
+    <div class="border-t-2 border-signal pt-6 flex flex-col md:flex-row items-center justify-between gap-4 text-center">
+      <p class="font-mono text-xs text-black">© 2024–2026 ОПТИКА ЮГ · СОЧИ</p>
       <div id="online-badge" class="online-badge" hidden aria-live="polite">
         <span class="online-dot" aria-hidden="true"></span>
         <span class="online-text">Сейчас на сайте: <b id="online-count">1</b></span>
       </div>
-      <a href="/privacy" class="text-[13px] text-ivory/60 link-underline hover:text-ivory transition-colors">Политика конфиденциальности</a>
-      <button data-action="open-booking" class="text-[13px] font-medium text-bronze-300 hover:text-ivory transition-colors duration-500">Оставить заявку →</button>
+      <a href="/privacy" class="font-mono text-xs text-black underline hover:text-med">Политика конфиденциальности</a>
+      <button data-action="open-booking" class="font-mono text-xs font-bold uppercase text-med hover:text-signal">Оставить заявку →</button>
     </div>
   </div>
 </footer>
 
-<!-- ═════════════ MOBILE ACTION BAR ═════════════ -->
-<div class="fixed bottom-3 inset-x-3 z-30 md:hidden glass rounded-full p-1.5 flex gap-1.5">
-  <a href="tel:+79884036442" data-bind-tel="phoneMain" class="flex-1 flex items-center justify-center gap-2 bg-white/70 ring-1 ring-black/[0.05] text-ink font-medium text-[15px] py-3.5 rounded-full transition-colors duration-500 active:bg-white">
-    <i data-lucide="phone-call" class="w-4 h-4 text-bronze"></i>
+<!-- ═════════════ MOBILE BOTTOM BAR ═════════════ -->
+<div class="fixed bottom-0 inset-x-0 z-30 md:hidden bg-white border-t-2 border-black grid grid-cols-2 divide-x divide-black">
+  <a href="tel:+79884036442" data-bind-tel="phoneMain" class="flex items-center justify-center gap-2 bg-white text-black font-bold text-xs uppercase tracking-wider py-4">
+    <i data-lucide="phone-call" class="w-4 h-4 text-med"></i>
     Позвонить
   </a>
-  <button data-action="open-booking" class="btn-lux flex-1 flex items-center justify-center gap-2 bg-ink text-ivory font-medium text-[15px] py-3.5 rounded-full">
-    <i data-lucide="calendar" class="w-4 h-4 text-bronze-300"></i>
+  <button data-action="open-booking" class="flex items-center justify-center gap-2 bg-black text-white font-bold text-xs uppercase tracking-wider py-4">
+    <i data-lucide="calendar" class="w-4 h-4"></i>
     Записаться
   </button>
 </div>
 
 <!-- ═════════════ BOOKING MODAL ═════════════ -->
 <div id="callback-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="callback-modal-title">
-  <div class="sheen bg-ivory rounded-[2rem] shadow-lux-xl ring-1 ring-black/5 w-full max-w-md p-6 sm:p-9 relative">
-    <button data-action="close-booking" class="absolute top-4 right-4 sm:top-5 sm:right-5 w-10 h-10 rounded-full bg-ink/[0.05] hover:bg-ink hover:text-ivory text-ink-500 flex items-center justify-center transition-all duration-500 ease-lux hover:rotate-90" aria-label="Закрыть">
+  <div class="bg-white border-2 border-black w-full max-w-md p-6 sm:p-8 relative corner-ticks">
+    <button data-action="close-booking" class="absolute top-4 right-4 w-9 h-9 border border-black bg-white hover:border-med hover:text-med flex items-center justify-center transition-colors" aria-label="Закрыть">
       <i data-lucide="x" class="w-4 h-4"></i>
     </button>
-    <div class="flex items-center gap-3 text-[11px] font-medium tracking-luxe uppercase text-bronze mb-4">
-      <span class="w-6 h-px bg-bronze/50"></span><span>Запись</span>
-    </div>
-    <h3 id="callback-modal-title" class="text-[2rem] leading-[1.02] font-medium tracking-[-0.035em] text-ink mb-3">Записаться <span class="font-serif italic text-bronze">в салон</span></h3>
-    <p class="text-ink-500 text-[14.5px] mb-6 leading-relaxed">Заполните данные и выберите, куда вам удобнее написать — ВК или MAX</p>
-    <form id="callback-form" class="flex flex-col gap-4">
+
+    <div class="font-mono text-[11px] uppercase tracking-widest text-med mb-1">[ БЛАНК ЗАПИСИ · V = 1.0 ]</div>
+    <h3 id="callback-modal-title" class="font-chart font-black uppercase text-xl sm:text-2xl text-black pb-3 border-b-2 border-signal">Записаться в салон</h3>
+    <p class="text-black text-sm mt-3 mb-5 leading-relaxed">Заполните данные и выберите, куда вам удобнее написать — ВК или MAX</p>
+
+    <form id="callback-form" class="flex flex-col gap-3.5">
       <div>
-        <label for="callback-name" class="text-[12.5px] font-medium text-ink-500 mb-1.5 block">Ваше имя *</label>
+        <label for="callback-name" class="font-mono text-xs font-semibold uppercase text-black mb-1 block">Ваше имя *</label>
         <input type="text" name="name" id="callback-name" placeholder="Например, Алексей" autocomplete="name" required
-          class="w-full bg-white/80 border border-zinc-200/90 rounded-2xl px-4 py-3.5 text-ink text-[15px] placeholder-ink-400/70 transition-all duration-500" />
+          class="w-full bg-white border border-black px-3.5 py-3 text-black text-sm font-medium placeholder-black/40" />
       </div>
       <div>
-        <label for="callback-phone" class="text-[12.5px] font-medium text-ink-500 mb-1.5 block">Номер телефона *</label>
+        <label for="callback-phone" class="font-mono text-xs font-semibold uppercase text-black mb-1 block">Номер телефона *</label>
         <input type="tel" name="phone" id="callback-phone" placeholder="+7 (___) ___-__-__" inputmode="tel" autocomplete="tel" maxlength="18" required
-          class="w-full bg-white/80 border border-zinc-200/90 rounded-2xl px-4 py-3.5 text-ink text-[15px] tabular-nums placeholder-ink-400/70 transition-all duration-500" />
+          class="w-full bg-white border border-black px-3.5 py-3 text-black font-mono text-sm font-medium placeholder-black/40" />
       </div>
       <div>
-        <label for="callback-message" class="text-[12.5px] font-medium text-ink-500 mb-1.5 block">Услуга или вопрос</label>
+        <label for="callback-message" class="font-mono text-xs font-semibold uppercase text-black mb-1 block">Услуга или вопрос</label>
         <input type="text" name="message" id="callback-message" placeholder="Проверка зрения, подбор очков, ремонт..."
-          class="w-full bg-white/80 border border-zinc-200/90 rounded-2xl px-4 py-3.5 text-ink text-[15px] placeholder-ink-400/70 transition-all duration-500" />
+          class="w-full bg-white border border-black px-3.5 py-3 text-black text-sm font-medium placeholder-black/40" />
       </div>
-      <div class="flex items-start gap-3">
-        <input type="checkbox" id="callback-consent" name="consent" required class="mt-0.5 w-[18px] h-[18px] flex-shrink-0 cursor-pointer" />
-        <label for="callback-consent" class="text-[12.5px] text-ink-500 leading-snug cursor-pointer">Я даю согласие на обработку моих персональных данных (имя, номер телефона, текст обращения) в соответствии с <a href="/privacy" target="_blank" rel="noopener" class="text-ink underline decoration-bronze/40 underline-offset-2 hover:decoration-bronze">Политикой конфиденциальности</a></label>
+      <div class="flex items-start gap-2.5 pt-1">
+        <input type="checkbox" id="callback-consent" name="consent" required class="mt-0.5 w-4 h-4 flex-shrink-0 cursor-pointer" />
+        <label for="callback-consent" class="text-xs text-black leading-snug cursor-pointer">Я даю согласие на обработку моих персональных данных (имя, номер телефона, текст обращения) в соответствии с <a href="/privacy" target="_blank" rel="noopener" class="text-med underline">Политикой конфиденциальности</a></label>
       </div>
-      <p id="booking-error" class="text-[13px] font-medium text-rose-800 bg-rose-50/80 border border-rose-200/80 rounded-xl px-3.5 py-2.5 hidden"></p>
-      <div id="booking-copied-notice" class="hidden bg-emerald-50/80 border border-emerald-200/80 rounded-2xl p-4 text-emerald-900 text-sm">
-        <div class="font-semibold text-emerald-900 mb-1">✅ Текст заявки скопирован!</div>
-        <div class="text-[12.5px] text-emerald-800/80 leading-snug">ВКонтакте и MAX не разрешают сайтам вставлять текст автоматически — просто нажмите <b>«Вставить» (Ctrl + V)</b> в открывшемся чате и отправьте сообщение.</div>
+
+      <p id="booking-error" class="text-xs font-bold text-signal bg-white border border-signal px-3.5 py-2.5 hidden"></p>
+      <div id="booking-copied-notice" class="hidden bg-white border border-med p-3.5 text-black text-xs">
+        <div class="font-bold text-med uppercase font-mono mb-1">✓ Текст заявки скопирован</div>
+        <div class="leading-snug">ВКонтакте и MAX не разрешают сайтам вставлять текст автоматически — просто нажмите <b>«Вставить» (Ctrl + V)</b> в открывшемся чате и отправьте сообщение.</div>
       </div>
 
       <div class="pt-1">
-        <div class="text-[10.5px] font-medium uppercase tracking-luxe text-ink-400 mb-3 text-center">Выберите куда написать</div>
+        <div class="font-mono text-[10px] font-bold uppercase tracking-widest text-med mb-2 text-center">Выберите канал связи</div>
         <div class="grid grid-cols-2 gap-2.5">
           <button type="button" data-action="messenger" data-channel="vk"
-            class="btn-lux flex items-center justify-center gap-2 bg-[#0077FF] hover:bg-[#0062D6] text-white font-medium text-[15px] py-3.5 px-4 rounded-2xl shadow-lux">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M15.07 2H8.93C3.33 2 2 3.33 2 8.93v6.14C2 20.67 3.33 22 8.93 22h6.14c5.6 0 6.93-1.33 6.93-6.93V8.93C22 3.33 20.67 2 15.07 2zm3.08 14.27h-1.46c-.55 0-.72-.44-1.71-1.45-.86-.83-1.24-.94-1.46-.94-.3 0-.38.08-.38.49v1.31c0 .35-.11.56-1.04.56-1.54 0-3.24-.93-4.44-2.66-1.81-2.54-2.3-4.45-2.3-4.84 0-.21.08-.41.49-.41h1.46c.37 0 .51.17.65.56.72 2.08 1.92 3.9 2.41 3.9.19 0 .27-.09.27-.56V9.92c-.06-.98-.58-1.06-.58-1.41 0-.17.14-.34.37-.34h2.29c.31 0 .42.16.42.53v2.89c0 .31.14.42.23.42.19 0 .34-.11.68-.45 1.05-1.18 1.8-3 1.8-3 .1-.21.27-.41.64-.41h1.46c.44 0 .54.23.44.53-.18.85-1.97 3.37-1.97 3.37-.16.26-.22.38 0 .68.16.22.69.68 1.04 1.09.65.74 1.14 1.36 1.28 1.79.13.42-.09.64-.51.64z"/></svg>
+            class="flex items-center justify-center gap-2 bg-med hover:bg-black text-white font-bold text-xs uppercase tracking-wider py-3.5 px-3 border border-med hover:border-black transition-colors">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M15.07 2H8.93C3.33 2 2 3.33 2 8.93v6.14C2 20.67 3.33 22 8.93 22h6.14c5.6 0 6.93-1.33 6.93-6.93V8.93C22 3.33 20.67 2 15.07 2zm3.08 14.27h-1.46c-.55 0-.72-.44-1.71-1.45-.86-.83-1.24-.94-1.46-.94-.3 0-.38.08-.38.49v1.31c0 .35-.11.56-1.04.56-1.54 0-3.24-.93-4.44-2.66-1.81-2.54-2.3-4.45-2.3-4.84 0-.21.08-.41.49-.41h1.46c.37 0 .51.17.65.56.72 2.08 1.92 3.9 2.41 3.9.19 0 .27-.09.27-.56V9.92c-.06-.98-.58-1.06-.58-1.41 0-.17.14-.34.37-.34h2.29c.31 0 .42.16.42.53v2.89c0 .31.14.42.23.42.19 0 .34-.11.68-.45 1.05-1.18 1.8-3 1.8-3 .1-.21.27-.41.64-.41h1.46c.44 0 .54.23.44.53-.18.85-1.97 3.37-1.97 3.37-.16.26-.22.38 0 .68.16.22.69.68 1.04 1.09.65.74 1.14 1.36 1.28 1.79.13.42-.09.64-.51.64z"/></svg>
             <span>ВКонтакте</span>
           </button>
           <button type="button" data-action="messenger" data-channel="max"
-            class="btn-lux flex items-center justify-center gap-2 bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-700 hover:to-violet-700 text-white font-medium text-[15px] py-3.5 px-4 rounded-2xl shadow-lux">
-            <i data-lucide="message-circle" class="w-5 h-5"></i>
+            class="flex items-center justify-center gap-2 bg-black hover:bg-med text-white font-bold text-xs uppercase tracking-wider py-3.5 px-3 border border-black hover:border-med transition-colors">
+            <i data-lucide="message-circle" class="w-4 h-4"></i>
             <span>MAX</span>
           </button>
         </div>
       </div>
 
       <a href="tel:+79884036442" data-bind-tel="phoneMain"
-        class="btn-lux w-full flex items-center justify-center gap-2 bg-ink hover:bg-ink-800 text-ivory font-medium text-[15px] py-3.5 rounded-2xl mt-0.5">
-        <i data-lucide="phone-call" class="w-[18px] h-[18px] text-bronze-300"></i>
+        class="w-full flex items-center justify-center gap-2 bg-signal hover:bg-black text-white font-bold text-xs uppercase tracking-wider py-3.5 border border-signal hover:border-black transition-colors mt-0.5">
+        <i data-lucide="phone-call" class="w-4 h-4"></i>
         <span>Позвонить напрямую</span>
       </a>
-      <p class="text-center text-[12px] text-ink-400">Текст вашей заявки автоматически скопируется для вставки в диалог</p>
+      <p class="text-center font-mono text-[11px] text-black">Текст заявки автоматически копируется в буфер обмена</p>
     </form>
   </div>
 </div>
+
+<!-- ═════════════ THANK YOU MODAL ═════════════ -->
 <div id="thankyou-modal" class="modal-overlay" role="dialog" aria-modal="true">
-  <div class="sheen bg-ivory rounded-[2rem] shadow-lux-xl ring-1 ring-black/5 w-full max-w-sm p-10 text-center relative">
-    <button data-action="close-thanks" class="absolute top-4 right-4 w-10 h-10 rounded-full bg-ink/[0.05] hover:bg-ink hover:text-ivory text-ink-500 flex items-center justify-center transition-all duration-500 ease-lux hover:rotate-90" aria-label="Закрыть">
+  <div class="bg-white border-2 border-black w-full max-w-sm p-8 text-center relative corner-ticks">
+    <button data-action="close-thanks" class="absolute top-4 right-4 w-9 h-9 border border-black bg-white hover:border-med hover:text-med flex items-center justify-center transition-colors" aria-label="Закрыть">
       <i data-lucide="x" class="w-4 h-4"></i>
     </button>
-    <div class="flex justify-center mb-6">
-      <svg width="64" height="64" viewBox="0 0 52 52">
-        <circle class="checkmark-circle" cx="26" cy="26" r="24" fill="none" stroke="#4D7C5B" stroke-width="2"/>
-        <path class="checkmark-path" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" stroke="#4D7C5B" stroke-width="2.5" stroke-linecap="round"/>
+    <div class="flex justify-center mb-5">
+      <svg width="60" height="60" viewBox="0 0 52 52">
+        <circle class="checkmark-circle" cx="26" cy="26" r="24" fill="none" stroke="#0052FF" stroke-width="2"/>
+        <path class="checkmark-path" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" stroke="#E60000" stroke-width="2.5" stroke-linecap="round"/>
       </svg>
     </div>
-    <h3 class="text-[1.9rem] leading-tight font-medium tracking-[-0.03em] text-ink mb-3">Заявка <span class="font-serif italic text-bronze">принята</span></h3>
-    <p class="text-ink-500 text-[15px] leading-relaxed mb-8">Спасибо за обращение в «Оптику Юг». Наш специалист свяжется с вами в течение 15 минут.</p>
-    <button data-action="close-thanks" class="btn-lux w-full bg-ink hover:bg-ink-800 text-ivory text-[15px] font-medium py-4 rounded-full">
+    <div class="font-mono text-xs text-med uppercase mb-1">[ ЗАЯВКА ПРИНЯТА · V = 1.0 ]</div>
+    <h3 class="font-chart font-black uppercase text-xl text-black mb-3">Спасибо!</h3>
+    <p class="text-black text-sm leading-relaxed mb-6">Спасибо за обращение в «Оптику Юг». Наш специалист свяжется с вами в течение 15 минут.</p>
+    <button data-action="close-thanks" class="btn-clinical w-full text-xs uppercase tracking-widest py-3.5">
       Отлично, спасибо!
     </button>
   </div>
 </div>
-<script src="./js/content.js?v=4"></script>
-<script src="./js/app.js?v=4"></script>
+
+<script src="./js/content.js?v=5"></script>
+<script src="./js/app.js?v=5"></script>
 </body>
 </html>

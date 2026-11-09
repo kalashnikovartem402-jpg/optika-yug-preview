@@ -55,12 +55,12 @@
   var observer = null;
   var batchTimer = null;
   var batchIndex = 0;
-  var STAGGER = 90;
-  var DURATION = 1500;
+  var STAGGER = 45;
+  var DURATION = 420;
 
   function finish(el, delay) {
     setTimeout(function () {
-      el.classList.remove('reveal', 'is-in', 'reveal-fade', 'reveal-scale');
+      el.classList.remove('reveal', 'is-in');
       el.style.removeProperty('--reveal-delay');
     }, delay + DURATION);
   }
@@ -103,24 +103,7 @@
 
 document.addEventListener('DOMContentLoaded', function () {
   'use strict';
-  if (window.lucide) lucide.createIcons({ attrs: { 'stroke-width': 1.5 } });
-  var prefersReducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var heroImg = document.getElementById('hero-img');
-  if (heroImg) {
-    var markLoaded = function () { document.documentElement.classList.add('is-loaded'); };
-    if (heroImg.complete) requestAnimationFrame(markLoaded);
-    else heroImg.addEventListener('load', markLoaded, { once: true });
-  }
-  var servicesList = document.getElementById('services-list');
-  if (servicesList && !prefersReducedMotion && window.matchMedia('(hover: hover)').matches) {
-    servicesList.addEventListener('pointermove', function (e) {
-      var card = e.target.closest ? e.target.closest('.service-card') : null;
-      if (!card) return;
-      var r = card.getBoundingClientRect();
-      card.style.setProperty('--mx', (e.clientX - r.left) + 'px');
-      card.style.setProperty('--my', (e.clientY - r.top) + 'px');
-    }, { passive: true });
-  }
+  if (window.lucide) lucide.createIcons({ attrs: { 'stroke-width': 1.75 } });
   var headerInner = document.getElementById('header-inner');
   window.addEventListener('scroll', function () {
     if (window.scrollY > 20) {
@@ -161,19 +144,6 @@ document.addEventListener('DOMContentLoaded', function () {
   var tabBtns = document.querySelectorAll('.tab-btn');
   var tabPanels = document.querySelectorAll('.tab-panel');
   var segmented = document.getElementById('vision-tabs');
-  var segIndicator = segmented ? segmented.querySelector('.segmented-indicator') : null;
-  function moveIndicator() {
-    if (!segIndicator) return;
-    var active = segmented.querySelector('.tab-btn.active');
-    if (!active) return;
-    segIndicator.style.width = active.offsetWidth + 'px';
-    segIndicator.style.height = active.offsetHeight + 'px';
-    segIndicator.style.transform = 'translate(' + active.offsetLeft + 'px,' + active.offsetTop + 'px)';
-    if (!segIndicator.classList.contains('is-ready')) {
-      segmented.classList.add('has-indicator');
-      requestAnimationFrame(function () { segIndicator.classList.add('is-ready'); });
-    }
-  }
   tabBtns.forEach(function (btn) {
     btn.setAttribute('aria-selected', btn.classList.contains('active') ? 'true' : 'false');
     btn.addEventListener('click', function () {
@@ -184,7 +154,6 @@ document.addEventListener('DOMContentLoaded', function () {
       btn.setAttribute('aria-selected', 'true');
       var targetPanel = document.querySelector('.tab-panel[data-panel="' + target + '"]');
       if (targetPanel) targetPanel.classList.add('active');
-      moveIndicator();
     });
   });
   if (segmented) {
@@ -198,9 +167,6 @@ document.addEventListener('DOMContentLoaded', function () {
       next.focus();
       next.click();
     });
-    moveIndicator();
-    window.addEventListener('resize', moveIndicator, { passive: true });
-    if (document.fonts && document.fonts.ready) document.fonts.ready.then(moveIndicator);
   }
   var callbackModal = document.getElementById('callback-modal');
   var thankyouModal = document.getElementById('thankyou-modal');
@@ -237,11 +203,11 @@ document.addEventListener('DOMContentLoaded', function () {
     bookingPhoneInput.addEventListener('input', function () {
       var formatted = formatRussianPhone(bookingPhoneInput.value);
       bookingPhoneInput.value = formatted;
-      bookingPhoneInput.classList.remove('border-rose-400', 'bg-rose-50/40');
+      bookingPhoneInput.classList.remove('input-invalid');
       if (isValidRussianPhone(formatted)) {
-        bookingPhoneInput.classList.add('border-emerald-400');
+        bookingPhoneInput.classList.add('input-valid');
       } else {
-        bookingPhoneInput.classList.remove('border-emerald-400');
+        bookingPhoneInput.classList.remove('input-valid');
       }
       if (bookingErrorEl) bookingErrorEl.classList.add('hidden');
     });
@@ -257,7 +223,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   if (bookingNameInput) {
     bookingNameInput.addEventListener('input', function () {
-      bookingNameInput.classList.remove('border-rose-400', 'bg-rose-50/40');
+      bookingNameInput.classList.remove('input-invalid');
       if (bookingErrorEl) bookingErrorEl.classList.add('hidden');
     });
   }
@@ -311,7 +277,7 @@ document.addEventListener('DOMContentLoaded', function () {
         bookingErrorEl.classList.remove('hidden');
       }
       if (nameEl) {
-        nameEl.classList.add('border-rose-400', 'bg-rose-50/40');
+        nameEl.classList.add('input-invalid');
         nameEl.focus();
       }
       return;
@@ -323,7 +289,7 @@ document.addEventListener('DOMContentLoaded', function () {
         bookingErrorEl.classList.remove('hidden');
       }
       if (phoneEl) {
-        phoneEl.classList.add('border-rose-400', 'bg-rose-50/40');
+        phoneEl.classList.add('input-invalid');
         phoneEl.focus();
       }
       return;
